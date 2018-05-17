@@ -1,0 +1,230 @@
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+}
+
+/* 2. Content ================================= */
+.hero {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+	.hero {
+		flex-direction: column;
+	}
+}
+
+.hero .background1 {
+	background-image: url(../../src/img/leftHero.jpg);
+	background-repeat: no-repeat;
+	height: 90vh;
+	width: 29.1796875%;
+	background-size: 100% auto;
+}
+
+@media screen and (max-width: 767px) {
+	.hero .background1 {
+		height: 50vh;
+		width: 100vw;
+		background-position: center;
+	}
+}
+
+.hero .background2 {
+	background-image: url(../../src/img/middleHero.jpg);
+	background-repeat: no-repeat;
+	height: 90vh;
+	width: 41.4453125%;
+	background-size: 100% auto;
+}
+
+@media screen and (max-width: 767px) {
+	.hero .background2 {
+		height: 50vh;
+		width: 100vw;
+		background-position: center;
+	}
+}
+
+.hero .background3 {
+	background-image: url(../../src/img/rightHero.jpg);
+	background-repeat: no-repeat;
+	height: 90vh;
+	width: 29.4140625%;
+	background-size: 100% auto;
+}
+
+@media screen and (max-width: 767px) {
+	.hero .background3 {
+		height: 50vh;
+		width: 100vw;
+		background-position: center;
+	}
+}
+
+.background1 {
+	position: relative;
+}
+
+.background1 h1 {
+	position: absolute;
+	width: 100%;
+	padding-top: 70%;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	font-family: avenir next;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 767px) {
+	.background1 h1 {
+		padding-top: 30.05780347%;
+	}
+}
+
+.background1 span {
+	background-color: #fbbe28;
+	height: 8px;
+	width: 46.74634794%;
+	position: absolute;
+	transform: translateX(50%);
+}
+
+.background2 {
+	position: relative;
+}
+
+.background2 h1 {
+	position: absolute;
+	width: 100%;
+	padding-top: 50%;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	font-family: avenir next;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 767px) {
+	.background2 h1 {
+		padding-top: 30.05780347%;
+	}
+}
+
+.background2 span {
+	background-color: #fbbe28;
+	height: 8px;
+	width: 30.74634794%;
+	position: absolute;
+	transform: translateX(110%);
+}
+
+.background3 {
+	position: relative;
+}
+
+.background3 h1 {
+	position: absolute;
+	width: 100%;
+	padding-top: 70%;
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	font-family: avenir next;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 767px) {
+	.background3 h1 {
+		padding-top: 30.05780347%;
+	}
+}
+
+.background3 span {
+	background-color: #fbbe28;
+	height: 8px;
+	width: 46.74634794%;
+	position: absolute;
+	transform: translateX(50%);
+}
+
+.logo {
+	position: absolute;
+	top: -30px;
+	width: 60px;
+	z-index: 2;
+	transform: translateZ(100px);
+	transition: 0.3s;
+}
+
+.logo:hover {
+	transform: rotate(-0.4turn);
+}
+
+/*# sourceMappingURL=main.css.map */
