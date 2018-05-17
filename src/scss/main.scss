@@ -39,46 +39,56 @@ body {
 	.background1{
 		background-image: url(../../src/img/leftHero.jpg);
 		background-repeat: no-repeat;
+		height: 0;
+		padding-bottom: 46%;
+		width: 29.1796875%;
+		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 50vh;
 			width: 100vw;
 			background-position: center;
 		}
-		height: 90vh;
-		width: 29.1796875%;
-		background-size: 100% auto;
+		
+		
 	}
 
 	.background2{
 		background-image: url(../../src/img/middleHero.jpg);
 		background-repeat: no-repeat;
+		height: 0;
+		padding-bottom: 46%;
+		width: 41.4453125%;
+		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 50vh;
 			width: 100vw;
 			background-position: center;
 		}
-		height: 90vh;
-		width: 41.4453125%;
-		background-size: 100% auto;
+		
+		
 	}
 
 	.background3{
 		background-image: url(../../src/img/rightHero.jpg);
 		background-repeat: no-repeat;
+		height: 0;
+		padding-bottom: 46%;
+		width: 29.4140625%;
+		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 50vh;
 			width: 100vw;
 			background-position: center;
 		}
-		height: 90vh;
-		width: 29.4140625%;
-		background-size: 100% auto;
+		
+		
 	}
 }
 
 
 .background1{
 	position: relative;
+	transition: .3s ease;
 
 	h1{
 		@media screen and (max-width: 767px){
@@ -102,10 +112,15 @@ body {
 		position: absolute;
 		transform: translateX(50%);
 	}
+
+	&:hover{
+		opacity: 0;
+	}
 }
 
 .background2{
 	position: relative;
+	transition: .3s ease;
 
 	h1{
 		@media screen and (max-width: 767px){
@@ -129,10 +144,15 @@ body {
 		position: absolute;
 		transform: translateX(110%);
 	}
+
+	&:hover{
+		opacity: 0;
+	}
 }
 
 .background3{
 	position: relative;
+	transition: .3s ease;
 
 	h1{
 		@media screen and (max-width: 767px){
@@ -155,6 +175,10 @@ body {
 		width: 46.74634794%;
 		position: absolute;
 		transform: translateX(50%);
+	}
+
+	&:hover{
+		opacity: 0;
 	}
 }
 

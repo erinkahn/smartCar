@@ -79,7 +79,8 @@ body {
 .hero .background1 {
 	background-image: url(../../src/img/leftHero.jpg);
 	background-repeat: no-repeat;
-	height: 90vh;
+	height: 0;
+	padding-bottom: 46%;
 	width: 29.1796875%;
 	background-size: 100% auto;
 }
@@ -95,7 +96,8 @@ body {
 .hero .background2 {
 	background-image: url(../../src/img/middleHero.jpg);
 	background-repeat: no-repeat;
-	height: 90vh;
+	height: 0;
+	padding-bottom: 46%;
 	width: 41.4453125%;
 	background-size: 100% auto;
 }
@@ -111,7 +113,8 @@ body {
 .hero .background3 {
 	background-image: url(../../src/img/rightHero.jpg);
 	background-repeat: no-repeat;
-	height: 90vh;
+	height: 0;
+	padding-bottom: 46%;
 	width: 29.4140625%;
 	background-size: 100% auto;
 }
@@ -126,6 +129,7 @@ body {
 
 .background1 {
 	position: relative;
+	transition: .3s ease;
 }
 
 .background1 h1 {
@@ -154,8 +158,13 @@ body {
 	transform: translateX(50%);
 }
 
+.background1:hover {
+	opacity: 0;
+}
+
 .background2 {
 	position: relative;
+	transition: .3s ease;
 }
 
 .background2 h1 {
@@ -184,8 +193,13 @@ body {
 	transform: translateX(110%);
 }
 
+.background2:hover {
+	opacity: 0;
+}
+
 .background3 {
 	position: relative;
+	transition: .3s ease;
 }
 
 .background3 h1 {
@@ -212,6 +226,10 @@ body {
 	width: 46.74634794%;
 	position: absolute;
 	transform: translateX(50%);
+}
+
+.background3:hover {
+	opacity: 0;
 }
 
 .logo {
