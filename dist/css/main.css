@@ -132,10 +132,46 @@ body {
 	transition: .3s ease;
 }
 
+.background1::after {
+	background-color: #fbbe28;
+	height: 8px;
+	width: 45%;
+	top: 52%;
+	content: "";
+	position: absolute;
+	left: 49%;
+	transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+	.background1::after {
+		width: 30%;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.background1::after {
+		width: 39%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.background1::after {
+		width: 31%;
+		top: 50%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.background1::after {
+		width: 29%;
+	}
+}
+
 .background1 h1 {
 	position: absolute;
 	width: 100%;
-	padding-top: 70%;
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -144,18 +180,22 @@ body {
 	letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 590px) {
 	.background1 h1 {
-		padding-top: 30.05780347%;
+		padding-top: 125px;
 	}
 }
 
-.background1 span {
-	background-color: #fbbe28;
-	height: 8px;
-	width: 46.74634794%;
-	position: absolute;
-	transform: translateX(50%);
+@media screen and (min-width: 591px) {
+	.background1 h1 {
+		padding-top: 143px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.background1 h1 {
+		padding-top: 70%;
+	}
 }
 
 .background1:hover {
@@ -167,10 +207,48 @@ body {
 	transition: .3s ease;
 }
 
+.background2::after {
+	background-color: #fbbe28;
+	height: 8px;
+	width: 32%;
+	top: 52%;
+	content: "";
+	position: absolute;
+	left: 49%;
+	transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+	.background2::after {
+		width: 30%;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.background2::after {
+		width: 28%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.background2::after {
+		width: 23%;
+		left: 50%;
+		top: 51%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.background2::after {
+		top: 50.5%;
+		width: 20%;
+	}
+}
+
 .background2 h1 {
 	position: absolute;
 	width: 100%;
-	padding-top: 50%;
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -179,18 +257,22 @@ body {
 	letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 590px) {
 	.background2 h1 {
-		padding-top: 30.05780347%;
+		padding-top: 125px;
 	}
 }
 
-.background2 span {
-	background-color: #fbbe28;
-	height: 8px;
-	width: 30.74634794%;
-	position: absolute;
-	transform: translateX(110%);
+@media screen and (min-width: 591px) {
+	.background2 h1 {
+		padding-top: 143px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.background2 h1 {
+		padding-top: 50%;
+	}
 }
 
 .background2:hover {
@@ -202,10 +284,47 @@ body {
 	transition: .3s ease;
 }
 
+.background3::after {
+	background-color: #fbbe28;
+	height: 8px;
+	width: 64%;
+	top: 52%;
+	content: "";
+	position: absolute;
+	left: 49%;
+	transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+	.background3::after {
+		width: 40%;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.background3::after {
+		width: 54%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.background3::after {
+		width: 45%;
+		left: 49%;
+		top: 50%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.background3::after {
+		width: 39%;
+	}
+}
+
 .background3 h1 {
 	position: absolute;
 	width: 100%;
-	padding-top: 70%;
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -214,18 +333,22 @@ body {
 	letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 590px) {
 	.background3 h1 {
-		padding-top: 30.05780347%;
+		padding-top: 125px;
 	}
 }
 
-.background3 span {
-	background-color: #fbbe28;
-	height: 8px;
-	width: 46.74634794%;
-	position: absolute;
-	transform: translateX(50%);
+@media screen and (min-width: 591px) {
+	.background3 h1 {
+		padding-top: 143px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.background3 h1 {
+		padding-top: 70%;
+	}
 }
 
 .background3:hover {
