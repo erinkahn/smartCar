@@ -1,3 +1,8 @@
 console.log(`Hello World from app.js! 
-Change this message, and make sure it changes in the browser 
-to verify that you're working in the right files.`)
+hey`)
+
+
+document.querySelector('.logo img').addEventListener('click', function(){
+    //show the vertical line menu
+    document.querySelector('.vertical-line').classList.toggle('show');
+})
