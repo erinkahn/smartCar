@@ -92,6 +92,7 @@ body {
 	//mobile nav
 	@media screen and (max-width: 767px){
 		display: none;
+		
 
 		&.show{
 			display: flex;
@@ -110,6 +111,7 @@ body {
 				z-index: 22;
 
 				li{
+					// transition: 2s ease;
 					opacity: 0;
 					padding-bottom: 90px;
 
@@ -395,13 +397,14 @@ body {
 
 .vertical-line{
 	transition: 4s;
+	position: relative;
 
 	&.show{
 		transform: scale(1.1); 
 		top: 100px;
 		left: 13%;
 		position: fixed;
-		height: 400px;
+		height: 240px;
 		width: 2px;
 		background-color:#fbbe28;
 		@media screen and (min-width: 768px){
@@ -430,9 +433,22 @@ body {
 	left: 11.8%;
 	position: fixed;
 	top: 100px;
+	left: -5px;
 }
 
 
 .dot1{
-	
+	top: 60px;
+}
+
+.dot2{
+	top: 120px;
+}
+
+.dot3{
+	top: 180px;
+}
+
+.dot4{
+	top: 240px;
 }
