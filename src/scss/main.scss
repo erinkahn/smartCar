@@ -398,6 +398,10 @@ body {
 .vertical-line{
 	transition: 4s;
 	position: relative;
+	//hide dots 
+	.dot1, .dot2, .dot3, .dot4{
+		display: none;
+	}
 
 	&.show{
 		transform: scale(1.1); 
@@ -420,35 +424,40 @@ body {
 		@media screen and (min-width: 1440px){
 			top: 135px;
 		}
+		//show dots on logo click
+		.dot1, .dot2, .dot3, .dot4{
+			display: block;
+		}
+	}
+
+	.dot1, .dot2, .dot3, .dot4{
+		z-index: 2;
+		background-color: #fbbe28;
+		width: 11px;
+		height: 11px;
+		border-radius: 90%;
+		left: 11.8%;
+		position: fixed;
+		top: 100px;
+		left: -5px;
+	}
+	
+	
+	.dot1{
+		top: 60px;
+	}
+	
+	.dot2{
+		top: 120px;
+	}
+	
+	.dot3{
+		top: 180px;
+	}
+	
+	.dot4{
+		top: 240px;
 	}
 }
 
 
-.dot1, .dot2, .dot3, .dot4{
-	z-index: 2;
-	background-color: #fbbe28;
-	width: 11px;
-	height: 11px;
-	border-radius: 90%;
-	left: 11.8%;
-	position: fixed;
-	top: 100px;
-	left: -5px;
-}
-
-
-.dot1{
-	top: 60px;
-}
-
-.dot2{
-	top: 120px;
-}
-
-.dot3{
-	top: 180px;
-}
-
-.dot4{
-	top: 240px;
-}

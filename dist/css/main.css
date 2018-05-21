@@ -503,6 +503,10 @@ body {
 	position: relative;
 }
 
+.vertical-line .dot1, .vertical-line .dot2, .vertical-line .dot3, .vertical-line .dot4 {
+	display: none;
+}
+
 .vertical-line.show {
 	transform: scale(1.1);
 	top: 100px;
@@ -538,7 +542,11 @@ body {
 	}
 }
 
-.dot1, .dot2, .dot3, .dot4 {
+.vertical-line.show .dot1, .vertical-line.show .dot2, .vertical-line.show .dot3, .vertical-line.show .dot4 {
+	display: block;
+}
+
+.vertical-line .dot1, .vertical-line .dot2, .vertical-line .dot3, .vertical-line .dot4 {
 	z-index: 2;
 	background-color: #fbbe28;
 	width: 11px;
@@ -550,19 +558,19 @@ body {
 	left: -5px;
 }
 
-.dot1 {
+.vertical-line .dot1 {
 	top: 60px;
 }
 
-.dot2 {
+.vertical-line .dot2 {
 	top: 120px;
 }
 
-.dot3 {
+.vertical-line .dot3 {
 	top: 180px;
 }
 
-.dot4 {
+.vertical-line .dot4 {
 	top: 240px;
 }
 
