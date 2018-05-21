@@ -164,6 +164,14 @@ body {
 	}
 }
 
+.hero .background1:hover::after, .hero .background2:hover::after, .hero .background3:hover::after {
+	display: none;
+}
+
+.hero .background1:hover h1, .hero .background2:hover h1, .hero .background3:hover h1 {
+	display: none;
+}
+
 .hero .background1 {
 	background-image: url(../../src/img/leftHero.jpg);
 	background-repeat: no-repeat;
@@ -287,7 +295,19 @@ body {
 }
 
 .background1:hover {
-	opacity: 0;
+	background-image: url(../img/smart.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 29.1796875%;
+	background-size: 100% auto;
+}
+
+@media screen and (max-width: 767px) {
+	.background1:hover {
+		height: 50vh;
+		width: 100vw;
+		background-position: top;
+	}
 }
 
 .background2 {
@@ -364,7 +384,19 @@ body {
 }
 
 .background2:hover {
-	opacity: 0;
+	background-image: url(../img/green.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 41.4453125%;
+	background-size: 100% auto;
+}
+
+@media screen and (max-width: 767px) {
+	.background2:hover {
+		height: 50vh;
+		width: 100vw;
+		background-position: bottom;
+	}
 }
 
 .background3 {
@@ -440,7 +472,19 @@ body {
 }
 
 .background3:hover {
-	opacity: 0;
+	background-image: url(../img/electric.jpg);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 29.4140625%;
+	background-size: 100% auto;
+}
+
+@media screen and (max-width: 767px) {
+	.background3:hover {
+		height: 50vh;
+		width: 100vw;
+		background-position: top;
+	}
 }
 
 .logo {

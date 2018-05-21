@@ -137,6 +137,17 @@ body {
 		height: 90vh;
 	}
 	
+	.background1, .background2, .background3{
+		&:hover{
+			&::after{
+				display: none;
+			}
+
+			h1{
+				display: none;
+			}
+		}
+	}
 
 	.background1{
 		background-image: url(../../src/img/leftHero.jpg);
@@ -239,7 +250,16 @@ body {
 	}
 
 	&:hover{
-		opacity: 0;
+		background-image: url(../img/smart.jpg);
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 29.1796875%;
+		background-size: 100% auto;
+		@media screen and (max-width: 767px){
+			height: 50vh;
+			width: 100vw;
+			background-position: top;
+		}
 	}
 }
 
@@ -295,7 +315,16 @@ body {
 	}
 
 	&:hover{
-		opacity: 0;
+		background-image: url(../img/green.jpg);
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 41.4453125%;
+		background-size: 100% auto;
+		@media screen and (max-width: 767px){
+			height: 50vh;
+			width: 100vw;
+			background-position: bottom;
+		}
 	}
 }
 
@@ -351,7 +380,16 @@ body {
 	}
 
 	&:hover{
-		opacity: 0;
+		background-image: url(../img/electric.jpg);
+		background-repeat: no-repeat;
+		height: 100%;
+		width: 29.4140625%;
+		background-size: 100% auto;
+		@media screen and (max-width: 767px){
+			height: 50vh;
+			width: 100vw;
+			background-position: top;
+		}
 	}
 }
 
