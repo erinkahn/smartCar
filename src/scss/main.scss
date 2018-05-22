@@ -161,8 +161,7 @@ body {
 			width: 100vw;
 			background-position: center;
 		}
-		
-		
+			
 	}
 
 	.background2{
@@ -177,7 +176,6 @@ body {
 			width: 100vw;
 			background-position: center;
 		}
-		
 		
 	}
 
@@ -196,7 +194,6 @@ body {
 	
 	}
 
-	
 }
 
 
@@ -470,7 +467,8 @@ body {
 
 	.dot1, .dot2, .dot3, .dot4{
 		z-index: 2;
-		background-color: #fbbe28;
+		border: 2px solid #fbbe28;
+		background-color: #fff;
 		width: 11px;
 		height: 11px;
 		border-radius: 90%;
@@ -483,6 +481,16 @@ body {
 	
 	.dot1{
 		top: 60px;
+		&::after{
+			content: "why smart?";
+			white-space: nowrap;
+			left: 20px;
+			position: absolute;
+			font-family: avenir next;
+			letter-spacing: 0.35em;
+			font-weight: bold;
+			font-size: 0.8em;
+		}
 	}
 	
 	.dot2{
@@ -499,3 +507,90 @@ body {
 }
 
 
+
+h2{
+	white-space: nowrap;
+	font-family: avenir;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #2c2c2c;
+	letter-spacing: 0.19em;
+}
+
+.middle-top{
+	margin: 20% 10.8984375%;
+	position: relative;
+
+	.headline{
+		position: absolute;
+		top: -50px;
+		right: 10.8984375%;
+
+		h2{
+			padding: 15px 25px;
+			font-size: 1.5em;
+		}
+	}
+
+	.flexrow-items{
+		width: 75.6640625%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		div{
+			width: 51.40625%;
+
+			img{
+				width: 100%;
+				padding-right: 5%;
+				max-height: 640px;
+			}
+	
+		}
+		
+		p{
+			margin-top: 5%;
+			font-family: avenir next;
+			font-size: 1em;
+			line-height: 1.5em;
+			max-width: 21.25%;
+		}
+	}
+}
+
+.middle-middle{
+	margin: auto 13.90625%;
+	display: flex;
+	flex-direction: row;
+
+	p{
+
+	}
+
+	img{
+
+	}
+
+	h2{
+
+	}
+}
+
+.middle-bottom{
+	margin: auto 17.03125%;
+	position: relative;
+
+	.headline{
+		position: absolute;
+		
+		h2{
+
+		}
+	}
+	.flexcolumn-items{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+}
