@@ -114,7 +114,7 @@ body {
 
 @media screen and (min-width: 768px) and (min-width: 1224px) {
 	.nav ul {
-		padding: 15px;
+		padding: 12px;
 		transform: translateY(-26px);
 	}
 }
@@ -172,6 +172,7 @@ body {
 		left: 0;
 		top: 0;
 		background-color: #fbbe28;
+		z-index: 13;
 	}
 	.nav.show ul {
 		position: absolute;
@@ -199,7 +200,6 @@ body {
 @media screen and (max-width: 767px) {
 	.hero {
 		flex-direction: column;
-		height: 90vh;
 	}
 }
 
@@ -215,16 +215,17 @@ body {
 	background-image: url(../../src/img/leftHero.jpg);
 	background-repeat: no-repeat;
 	height: 0;
-	padding-bottom: 46%;
-	width: 29.1796875%;
+	padding-bottom: 45.89844%;
+	width: 29.0625%;
 	background-size: 100% auto;
 }
 
 @media screen and (max-width: 767px) {
 	.hero .background1 {
-		height: 50vh;
+		height: 33.33333vh;
 		width: 100vw;
 		background-position: center;
+		padding: 0;
 	}
 }
 
@@ -239,9 +240,10 @@ body {
 
 @media screen and (max-width: 767px) {
 	.hero .background2 {
-		height: 50vh;
+		height: 33.33333vh;
 		width: 100vw;
 		background-position: center;
+		padding: 0;
 	}
 }
 
@@ -256,9 +258,10 @@ body {
 
 @media screen and (max-width: 767px) {
 	.hero .background3 {
-		height: 50vh;
+		height: 33.33333vh;
 		width: 100vw;
 		background-position: center;
+		padding: 0;
 	}
 }
 
@@ -267,46 +270,11 @@ body {
 	transition: .3s ease;
 }
 
-.background1::after {
-	background-color: #fbbe28;
-	height: 8px;
-	width: 45%;
-	top: 52%;
-	content: "";
-	position: absolute;
-	left: 49%;
-	transform: translateX(-50%);
-}
-
-@media screen and (max-width: 768px) {
-	.background1::after {
-		width: 30%;
-		margin-top: 20px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.background1::after {
-		width: 39%;
-	}
-}
-
-@media screen and (min-width: 1224px) {
-	.background1::after {
-		width: 31%;
-		top: 50%;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.background1::after {
-		width: 29%;
-	}
-}
-
 .background1 h1 {
 	position: absolute;
-	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -315,21 +283,26 @@ body {
 	letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 590px) {
-	.background1 h1 {
-		padding-top: 125px;
-	}
+.background1 h1::after {
+	content: "";
+	background-color: #fbbe28;
+	height: 8px;
+	width: calc(100% - 0.2em);
+	top: 52%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateX(-0.1em);
 }
 
-@media screen and (min-width: 591px) {
-	.background1 h1 {
-		padding-top: 143px;
+@media screen and (max-width: 767px) {
+	.background1 h1::after {
+		margin-top: 20px;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.background1 h1 {
-		padding-top: 70%;
+	.background1 h1::after {
+		margin-top: 20px;
 	}
 }
 
@@ -343,7 +316,7 @@ body {
 
 @media screen and (max-width: 767px) {
 	.background1:hover {
-		height: 50vh;
+		height: 33.33333vh;
 		width: 100vw;
 		background-position: top;
 	}
@@ -354,48 +327,11 @@ body {
 	transition: .3s ease;
 }
 
-.background2::after {
-	background-color: #fbbe28;
-	height: 8px;
-	width: 32%;
-	top: 52%;
-	content: "";
-	position: absolute;
-	left: 49%;
-	transform: translateX(-50%);
-}
-
-@media screen and (max-width: 768px) {
-	.background2::after {
-		width: 30%;
-		margin-top: 20px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.background2::after {
-		width: 28%;
-	}
-}
-
-@media screen and (min-width: 1224px) {
-	.background2::after {
-		width: 23%;
-		left: 50%;
-		top: 51%;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.background2::after {
-		top: 50.5%;
-		width: 20%;
-	}
-}
-
 .background2 h1 {
 	position: absolute;
-	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -404,21 +340,26 @@ body {
 	letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 590px) {
-	.background2 h1 {
-		padding-top: 125px;
-	}
+.background2 h1::after {
+	content: "";
+	background-color: #fbbe28;
+	height: 8px;
+	width: calc(100% - 0.2em);
+	top: 52%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateX(-0.1em);
 }
 
-@media screen and (min-width: 591px) {
-	.background2 h1 {
-		padding-top: 143px;
+@media screen and (max-width: 767px) {
+	.background2 h1::after {
+		margin-top: 20px;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.background2 h1 {
-		padding-top: 50%;
+	.background2 h1::after {
+		margin-top: 20px;
 	}
 }
 
@@ -432,7 +373,7 @@ body {
 
 @media screen and (max-width: 767px) {
 	.background2:hover {
-		height: 50vh;
+		height: 33.33333vh;
 		width: 100vw;
 		background-position: bottom;
 	}
@@ -443,47 +384,11 @@ body {
 	transition: .3s ease;
 }
 
-.background3::after {
-	background-color: #fbbe28;
-	height: 8px;
-	width: 64%;
-	top: 52%;
-	content: "";
-	position: absolute;
-	left: 49%;
-	transform: translateX(-50%);
-}
-
-@media screen and (max-width: 768px) {
-	.background3::after {
-		width: 40%;
-		margin-top: 20px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.background3::after {
-		width: 54%;
-	}
-}
-
-@media screen and (min-width: 1224px) {
-	.background3::after {
-		width: 45%;
-		left: 49%;
-		top: 50%;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.background3::after {
-		width: 39%;
-	}
-}
-
 .background3 h1 {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	position: absolute;
-	width: 100%;
 	color: #fff;
 	font-size: 24px;
 	text-align: center;
@@ -492,21 +397,26 @@ body {
 	letter-spacing: 0.2em;
 }
 
-@media screen and (max-width: 590px) {
-	.background3 h1 {
-		padding-top: 125px;
-	}
+.background3 h1::after {
+	content: "";
+	background-color: #fbbe28;
+	height: 8px;
+	width: calc(100% - 0.2em);
+	top: 52%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateX(-0.1em);
 }
 
-@media screen and (min-width: 591px) {
-	.background3 h1 {
-		padding-top: 143px;
+@media screen and (max-width: 767px) {
+	.background3 h1::after {
+		margin-top: 20px;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.background3 h1 {
-		padding-top: 70%;
+	.background3 h1::after {
+		margin-top: 20px;
 	}
 }
 
@@ -520,22 +430,29 @@ body {
 
 @media screen and (max-width: 767px) {
 	.background3:hover {
-		height: 50vh;
+		height: 33.33333vh;
 		width: 100vw;
 		background-position: top;
 	}
 }
 
 .logo {
+	position: fixed;
 	position: absolute;
 	left: 20px;
 	width: 100%;
 	z-index: 2;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 573px) {
 	.logo {
-		transform: translateY(-36px);
+		transform: translateY(-46%);
+	}
+}
+
+@media screen and (min-width: 574px) {
+	.logo {
+		transform: translateY(-20%);
 	}
 }
 
@@ -566,7 +483,6 @@ body {
 .logo img {
 	width: 10%;
 	transition: .5s ease;
-	position: fixed;
 	z-index: 2;
 }
 
