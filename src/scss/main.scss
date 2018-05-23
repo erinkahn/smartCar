@@ -171,7 +171,7 @@ body {
 		background-repeat: no-repeat;
 		height: 0;
 		padding-bottom: percentage(1175/2560); // 47%;
-		width: percentage(744/2560); //29.1796875%;
+		width: percentage(747/2560); //29.1796875%;
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
@@ -186,8 +186,8 @@ body {
 		background-image: url(../../src/img/middleHero.jpg);
 		background-repeat: no-repeat;
 		height: 0;
-		padding-bottom: 46%;
-		width: 41.4453125%;
+		padding-bottom: percentage(1175/2560);
+		width: percentage(1063/2560);
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
@@ -202,8 +202,8 @@ body {
 		background-image: url(../../src/img/rightHero.jpg);
 		background-repeat: no-repeat;
 		height: 0;
-		padding-bottom: 46%;
-		width: 29.4140625%;
+		padding-bottom: percentage(1175/2560);
+		width: percentage(754/2560);
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
@@ -494,79 +494,151 @@ h2{
 }
 
 .middle-top{
-	margin: 20% 10.8984375%;
+	display: flex;
+	justify-content: center;
+	margin: 30% auto;
 	position: relative;
+	@media screen and (min-width: 1000px){
+		margin: 20% auto;
+	}
 
 	.headline{
+		text-align: center;
 		position: absolute;
-		top: -50px;
-		right: 10.8984375%;
+		@media screen and (min-width: 768px){
+			position: absolute;
+			right: 10.9375%;
+		}
 
 		h2{
-			padding: 15px 25px;
-			font-size: 1.5em;
+			padding: 15px 22px;
+			font-size: 0.8em;
+			@media screen and (min-width: 768px){
+				padding: 15px 38px;
+			}
+			@media screen and (min-width: 1000px){
+				font-size: 0.9em;
+			}
+			@media screen and (min-width: 1150px){
+				font-size: 1em;
+			}
+			@media screen and (min-width: 1281px){
+				font-size: 1.1em;
+			}
+			
 		}
 	}
 
 	.flexrow-items{
+		flex-direction: column;
 		width: 75.6640625%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-
+		
 		div{
-			width: 51.40625%;
-
+			margin-top: 41px;
+			
+			@media screen and (max-width: 767px){
+				background-image: url('../img/interiorMobile.jpg');
+				background-repeat: no-repeat;
+				height: 120%;
+				background-position: center;
+				background-size: 100%;
+			}
+			@media screen and (min-width: 768px){
+				background-image: url('../img/interior.jpg');
+				background-repeat: no-repeat;
+				height: 100%;
+				background-position: center;
+				background-size: 100%;
+				width: 65%;
+				margin-top: -25px;
+				float: left;
+			}
+			@media screen and (min-width: 930px){
+				margin-top: -10px;
+				height: 99%;
+			}
+			@media screen and (min-width: 1000px){
+				margin-top: -28px;
+			}
+			@media screen and (min-width: 1150px){
+				margin-top: -9px;
+			}
+			@media screen and (min-width: 1281px){
+				margin-top: -1px;
+				height: 90%;
+			}
+			@media screen and (min-width: 1337px){
+				margin-top: 19px;
+				height: 80%;
+			}
 			img{
 				width: 100%;
-				padding-right: 5%;
-				max-height: 640px;
 			}
 	
 		}
 		
 		p{
+			padding-left: 15px;
 			margin-top: 5%;
 			font-family: avenir next;
-			font-size: 1em;
+			font-size: 0.9em;
 			line-height: 1.5em;
-			max-width: 21.25%;
+			padding-bottom: 10%;
+			@media screen and (min-width: 768px){
+				width: 30%;
+				margin-top: 10%;
+				float: right;
+				padding-left: 0px;
+			}
+			@media screen and (min-width: 1000px){
+				line-height: 2em;
+				font-size: 0.95em;
+			}
+			@media screen and (min-width: 1281px){
+				font-size: 1em;
+				line-height: 2.1em;
+			}
+			@media screen and (min-width: 1336px){
+				font-size: 1.2em;
+				line-height: 2.2em;
+			}
+			
 		}
 	}
 }
 
-.middle-middle{
-	margin: auto 13.90625%;
-	display: flex;
-	flex-direction: row;
+// .middle-middle{
+// 	margin: auto 13.90625%;
+// 	display: flex;
+// 	flex-direction: row;
 
-	p{
+// 	p{
 
-	}
+// 	}
 
-	img{
+// 	img{
 
-	}
+// 	}
 
-	h2{
+// 	h2{
 
-	}
-}
+// 	}
+// }
 
-.middle-bottom{
-	margin: auto 17.03125%;
-	position: relative;
+// .middle-bottom{
+// 	margin: auto 17.03125%;
+// 	position: relative;
 
-	.headline{
-		position: absolute;
+// 	.headline{
+// 		position: absolute;
 
-		h2{
+// 		h2{
 
-		}
-	}
-	.flexcolumn-items{
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-	}
-}
+// 		}
+// 	}
+// 	.flexcolumn-items{
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: flex-end;
+// 	}
+// }
