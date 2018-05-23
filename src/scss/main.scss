@@ -70,12 +70,21 @@ body {
 			position: absolute;
 			z-index: 22;
 			right: 0;
-			top: 38.4vh;
-
+			transform: translateY(-20px);
+			@media screen and (min-width: 1224px){
+				padding: 15px;
+				transform: translateY(-26px);
+			}
 
 			li{
 				padding-right: 30px;
 				display: inline-block;
+				@media screen and (min-width: 1024px){
+					padding-right: 50px;
+				}
+				@media screen and (min-width: 1224px){
+					padding-right: 50px;
+				}
 
 				&:first-child{
 					padding-left: 30px;
@@ -83,6 +92,12 @@ body {
 
 				a{
 					font-size: 0.8em;
+					@media screen and (min-width: 1024px){
+						font-size: 1em;
+					}
+					@media screen and (min-width: 1224px){
+						font-size: 1.2em;
+					}
 				}
 			}
 		}
@@ -95,11 +110,13 @@ body {
 		
 
 		&.show{
+			position: absolute;
 			display: flex;
 			width: 100%;
 			height: 100vh;
 			text-align: center;
-			left: 43%;
+			left: 0;
+			top: 0;
 			background-color: #fbbe28;
 			
 			ul{
@@ -111,7 +128,6 @@ body {
 				z-index: 22;
 
 				li{
-					// transition: 2s ease;
 					opacity: 0;
 					padding-bottom: 90px;
 
@@ -122,8 +138,6 @@ body {
 			}
 		}
 	}
-
-	
 	
 }
 
@@ -583,7 +597,7 @@ h2{
 
 	.headline{
 		position: absolute;
-		
+
 		h2{
 
 		}
