@@ -444,7 +444,7 @@ p {
 	position: fixed;
 	position: absolute;
 	left: 20px;
-	width: 100%;
+	width: 90%;
 	z-index: 2;
 }
 
@@ -605,9 +605,15 @@ h2 {
 	position: relative;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
 	.middle-top {
 		margin: 20% auto;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.middle-top {
+		margin-bottom: 10%;
 	}
 }
 
@@ -647,6 +653,7 @@ h2 {
 	.middle-top .headline h2 {
 		padding: 15px 38px;
 		margin: 0px;
+		font-size: 0.8em;
 	}
 }
 
@@ -805,7 +812,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	width: 72.1875%;
-	margin: 60% auto;
+	margin: 50% auto;
 	position: relative;
 	flex-direction: column;
 }
@@ -945,6 +952,142 @@ h2 {
 @media screen and (min-width: 1281px) {
 	.middle-middle .right-side-car h2 {
 		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 439px) {
+	.middle-bottom {
+		margin-top: 60%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.middle-bottom {
+		margin: 25% auto;
+		width: 65.78125%;
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.middle-bottom {
+		margin: 15% auto;
+	}
+}
+
+.middle-bottom .headline2 {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	.middle-bottom .headline2 {
+		position: absolute;
+		z-index: 3;
+		left: 0;
+	}
+}
+
+.middle-bottom .headline2 h2 {
+	font-size: 0.7em;
+	padding: 10px 36px;
+	text-align: center;
+}
+
+@media screen and (min-width: 438px) {
+	.middle-bottom .headline2 h2 {
+		padding: 10px 61px;
+	}
+}
+
+@media screen and (min-width: 580px) {
+	.middle-bottom .headline2 h2 {
+		padding: 10px 115px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.middle-bottom .headline2 h2 {
+		padding: 15px 22px;
+		font-size: 0.8em;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 1.1em;
+	}
+}
+
+.middle-bottom .flexcolumn-items {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-bottom .flexcolumn-items div {
+	position: absolute;
+	right: 0;
+	width: 88.53919%;
+	background-image: url("../img/smart-on-the-road.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	height: 0;
+	padding-bottom: 58.2421875%;
+}
+
+@media screen and (max-width: 767px) {
+	.middle-bottom .flexcolumn-items div {
+		right: 6%;
+	}
+}
+
+.middle-bottom .flexcolumn-items p {
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-family: avenir next;
+	margin: 45% auto;
+	width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+	.middle-bottom .flexcolumn-items p {
+		line-height: 1.7em;
+		margin-left: 11.2%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.middle-bottom .flexcolumn-items p {
+		line-height: 2em;
+		font-size: 0.95em;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.middle-bottom .flexcolumn-items p {
+		font-size: 0.99em;
+		line-height: 2.3em;
+	}
+}
+
+@media screen and (min-width: 1336px) {
+	.middle-bottom .flexcolumn-items p {
+		font-size: 1.2em;
+		line-height: 2.2em;
 	}
 }
 

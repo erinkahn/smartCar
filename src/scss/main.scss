@@ -376,7 +376,7 @@ p{
 	}
 	position: absolute;
 	left: 20px;
-	width: 100%;
+	width: 90%;
 	z-index: 2;
 	
 	
@@ -501,8 +501,11 @@ h2{
 	justify-content: center;
 	margin: 30% auto;
 	position: relative;
-	@media screen and (min-width: 1000px){
+	@media screen and (min-width: 768px){
 		margin: 20% auto;
+	}
+	@media screen and (min-width: 1000px){
+		margin-bottom: 10%;
 	}
 
 	.headline{
@@ -528,6 +531,7 @@ h2{
 			@media screen and (min-width: 768px){
 				padding: 15px 38px;
 				margin: 0px;
+				font-size: 0.8em;
 			}
 			@media screen and (min-width: 1000px){
 				font-size: 0.9em;
@@ -637,7 +641,7 @@ h2{
 	display: flex;
 	justify-content: center;
 	width: 72.1875%;
-	margin: 60% auto;
+	margin: 50% auto;
 	position: relative;
 	flex-direction: column;
 
@@ -735,87 +739,103 @@ h2{
 		
 	}
 
-
-
-	
-	// div:first-child{
-	// 	width: 100%;
-	// 	position: absolute;
-	// 	background-image: url('../img/blueCar.png');
-	// 	background-repeat: no-repeat;
-	// 	height: 77%;
-	// 	background-position: center;
-	// 	background-size: 100% auto;
-	// 	@media screen and (min-width: 768px){
-	// 		width: 52.5%;
-	// 	}
-	// }
-
-	// 	h2{
-	// 		text-align: center;
-	// 		padding: 15px 16px;
-	// 		font-size: 0.8em;
-	// 		@media screen and (min-width: 768px){
-	// 			padding: 15px 38px;
-	// 		}
-	// 		@media screen and (min-width: 1000px){
-	// 			font-size: 0.9em;
-	// 		}
-	// 		@media screen and (min-width: 1150px){
-	// 			font-size: 1em;
-	// 		}
-	// 		@media screen and (min-width: 1281px){
-	// 			font-size: 1.1em;
-	// 		}
-	// 	}
-	// }
-
-	// div:last-child{
-	// 	margin-top: 70%;
-	// 	p{
-	// 		font-family: avenir next;
-	// 		font-size: 0.9em;
-	// 		line-height: 1.5em;
-	// 		padding-bottom: 10%;
-
-	// 		@media screen and (min-width: 768px){
-	// 			width: 30%;
-	// 			margin-top: 10%;
-	// 			float: right;
-	// 			padding-left: 0px;
-	// 		}
-	// 		@media screen and (min-width: 1000px){
-	// 			line-height: 2em;
-	// 			font-size: 0.95em;
-	// 		}
-	// 		@media screen and (min-width: 1281px){
-	// 			font-size: 1em;
-	// 			line-height: 2.1em;
-	// 		}
-	// 		@media screen and (min-width: 1336px){
-	// 			font-size: 1.2em;
-	// 			line-height: 2.2em;
-	// 		}
-	// 	}
-
-	// }
-
 }
 
-// .middle-bottom{
-// 	margin: auto 17.03125%;
-// 	position: relative;
 
-// 	.headline{
-// 		position: absolute;
 
-// 		h2{
+.middle-bottom{
+	@media screen and (max-width: 439px){
+		margin-top: 60%;
+	}
 
-// 		}
-// 	}
-// 	.flexcolumn-items{
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: flex-end;
-// 	}
-// }
+	@media screen and (min-width: 768px){
+		margin: 25% auto;
+		width: 65.78125%;
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	@media screen and (min-width: 1000px){
+		margin: 15% auto;
+	}
+	
+
+	.headline2{
+		display: flex;
+		justify-content: center;
+		@media screen and (min-width: 768px){
+			position: absolute;
+			z-index: 3;
+			left: 0;
+		}
+
+		h2{
+			font-size: 0.7em;
+			padding: 10px 36px;
+			text-align: center;
+			@media screen and (min-width: 438px){
+				padding: 10px 61px;
+			}
+			@media screen and (min-width: 580px){
+				padding: 10px 115px;
+			}
+			@media screen and (min-width: 768px){
+				padding: 15px 22px;
+				font-size: 0.8em;
+			}
+			@media screen and (min-width: 1000px){
+				font-size: 0.9em;
+			}
+			@media screen and (min-width: 1150px){
+				font-size: 1em;
+			}
+			@media screen and (min-width: 1281px){
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	.flexcolumn-items{
+		display: flex;
+		flex-direction: column;
+
+		div{
+			@media screen and (max-width: 767px){
+				right: 6%;
+			}
+			position: absolute;
+			right: 0;
+			width: percentage(1491/1684);
+			background-image: url('../img/smart-on-the-road.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			height: 0;
+			padding-bottom: 58.2421875%;
+		}
+
+		p{
+			font-size: 0.9em;
+			line-height: 1.5em;
+			font-family: avenir next;
+			margin: 45% auto;
+			width: 80%;
+
+			@media screen and (min-width: 768px){
+				line-height: 1.7em;
+				margin-left: 11.2%;
+			}
+			@media screen and (min-width: 1000px){
+				line-height: 2em;
+				font-size: 0.95em;
+			}
+			@media screen and (min-width: 1140px){
+				font-size: 0.99em;
+				line-height: 2.3em;
+			}
+			@media screen and (min-width: 1336px){
+				font-size: 1.2em;
+				line-height: 2.2em;
+			}
+		}
+	}
+}
