@@ -3,6 +3,11 @@
 	src: url("../fonts/PRIMETIME.ttf") format("ttf"), url("../fonts/PRIMETIME.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: 'ubuntu titling';
+	src: url("../fonts/UbuntuTitling.ttf") format("ttf"), url("../fonts/UbuntuTitling.ttf") format("truetype");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1120,6 +1125,37 @@ h2 {
 	display: flex;
 }
 
+.models .cars-container h4 {
+	margin-top: 17px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.09em;
+	font-size: 1.4em;
+}
+
+.models .cars-container p {
+	padding: 13px 0;
+	font-size: 1.1em;
+}
+
+.models .cars-container a {
+	font-size: 1.1em;
+	transition: .6s ease;
+	color: #383737;
+	text-decoration: none;
+	background-color: #fbbe28;
+}
+
+.models .cars-container a:hover {
+	color: #fff;
+	background-color: #383737;
+}
+
+.models .cars-container .passionA a, .models .cars-container .pure a, .models .cars-container .passionB a, .models .cars-container .prime a {
+	padding: 10px;
+	margin: 0 100px;
+}
+
 .models .cars-container .coupe {
 	display: flex;
 }
@@ -1130,17 +1166,19 @@ h2 {
 }
 
 .models .cars-container .coupe .title h3 {
-	font-family: jaf-domus-titling-web, sans-serif;
+	font-family: primetime, sans-serif;
 	font-style: normal;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
+	letter-spacing: 0.4em;
 }
 
 .models .cars-container .coupe .pure, .models .cars-container .coupe .passionA {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	font-family: 'ubuntu titling', sans-serif;
 }
 
 .models .cars-container .cabrio {
@@ -1153,17 +1191,19 @@ h2 {
 }
 
 .models .cars-container .cabrio .title h3 {
-	font-family: jaf-domus-titling-web, sans-serif;
+	font-family: 'primetime', sans-serif;
 	font-style: normal;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
+	letter-spacing: 0.4em;
 }
 
 .models .cars-container .cabrio .passionB, .models .cars-container .cabrio .prime {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	font-family: 'ubuntu titling', sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

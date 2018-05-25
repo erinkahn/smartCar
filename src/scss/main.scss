@@ -5,6 +5,13 @@
 		 url('../fonts/PRIMETIME.ttf') format('truetype');
 } 
 
+@font-face {
+	font-family: 'ubuntu titling';
+	src: url('../fonts/UbuntuTitling.ttf') format('ttf'),
+		 url('../fonts/UbuntuTitling.ttf') format('truetype');
+} 
+
+
 
 
 @import 'reset';
@@ -865,6 +872,37 @@ h2{
 		flex-direction: row;
 		display: flex;
 
+		h4{
+			margin-top: 17px;
+			text-transform: uppercase;
+			font-weight: bold;
+			letter-spacing: 0.09em;
+			font-size: 1.4em;
+		}
+
+		p{
+			padding: 13px 0;
+			font-size: 1.1em;
+		}
+
+		a{
+			font-size: 1.1em;
+			transition: .6s ease;
+			color: #383737;
+			text-decoration: none;
+			background-color: #fbbe28;
+			&:hover{
+				color: #fff;
+				background-color: #383737;
+			}
+		}
+
+		.passionA a, .pure a, .passionB a, .prime a{
+			padding: 10px;
+			margin: 0 100px;
+		}
+
+
 		.coupe{
 			display: flex;
 
@@ -873,11 +911,12 @@ h2{
 				white-space: nowrap;
 
 				h3{
-					font-family: jaf-domus-titling-web, sans-serif;
+					font-family: primetime, sans-serif;
 					font-style: normal;
 					text-align: center;
 					text-transform: uppercase;
 					font-weight: 700;
+					letter-spacing: 0.4em;
 				}
 			}
 
@@ -885,6 +924,11 @@ h2{
 				display: flex;
 				flex-direction: column;
 				text-align: center;
+				font-family: 'ubuntu titling', sans-serif;
+
+				img{
+
+				}
 			}
 		}
 
@@ -896,11 +940,12 @@ h2{
 				white-space: nowrap;
 
 				h3{
-					font-family: jaf-domus-titling-web, sans-serif;
+					font-family: 'primetime', sans-serif;
 					font-style: normal;
 					text-align: center;
 					text-transform: uppercase;
 					font-weight: 700;
+					letter-spacing: 0.4em;
 				}
 			}
 
@@ -908,7 +953,14 @@ h2{
 				display: flex;
 				flex-direction: column;
 				text-align: center;
+				font-family: 'ubuntu titling', sans-serif;
+
+				img{
+
+				}
+
 			}
+			
 		}
 	}
 		
