@@ -1,16 +1,15 @@
-// font-family: jaf-domus-titling-web, sans-serif;
-// font-style: normal;
-// font-weight: 500;
 
-// font-family: jaf-domus-titling-web, sans-serif;
-// font-style: normal;
-// font-weight: 400;
+@font-face {
+	font-family: 'primetime';
+	src: url('../fonts/PRIMETIME.ttf') format('ttf'),
+		 url('../fonts/PRIMETIME.ttf') format('truetype');
+} 
 
-/* 0. Reset ================================= */
+
+
 @import 'reset';
 
 
-/* 1. Main Layout ================================= */
 
 * {
 	box-sizing: border-box;
@@ -823,6 +822,7 @@ h2{
 			@media screen and (min-width: 768px){
 				line-height: 1.7em;
 				margin-left: 11.2%;
+				margin-bottom: 0px;
 			}
 			@media screen and (min-width: 1000px){
 				line-height: 2em;
@@ -838,4 +838,78 @@ h2{
 			}
 		}
 	}
+}
+
+
+
+.models{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	width: 75.625%;
+
+	.modelsTitle{
+		display: block;
+		position: absolute;
+
+		h1{
+			text-align: center;
+			white-space: nowrap;
+			letter-spacing: 0.2em;
+			font-size: 1.4em;
+			font-family: primetime;
+		}
+	}
+
+	.cars-container{
+		flex-direction: row;
+		display: flex;
+
+		.coupe{
+			display: flex;
+
+			.title{
+				text-align: center;
+				white-space: nowrap;
+
+				h3{
+					font-family: jaf-domus-titling-web, sans-serif;
+					font-style: normal;
+					text-align: center;
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+			}
+
+			.pure, .passionA{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+
+		.cabrio{
+			display: flex;
+
+			.title{
+				text-align: center;
+				white-space: nowrap;
+
+				h3{
+					font-family: jaf-domus-titling-web, sans-serif;
+					font-style: normal;
+					text-align: center;
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+			}
+
+			.passionB, .prime{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+	}
+		
 }

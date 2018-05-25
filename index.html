@@ -7,6 +7,8 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="dist/css/main.css">
+		<link rel="stylesheet" href="https://use.typekit.net/bnx0fgt.css">
+
 		
 	</head>
 	<body>
@@ -95,54 +97,60 @@
 
 		<section class="models"> <!--display flex justify content center-->
 
-			<h1>Our Models</h1>
+			<div class="modelsTitle">
+				<h1>Our Models</h1>
+			</div>
 
-			<div class="coupe"> <!--display: flex; flex-direction column-->
-				<div class="title"> <!--display inline-block-->
-					<h3>The Coupe</h3>
-				</div>
-				<div class="cars"> <!--flex direction row-->
-					<img src="" alt="">
-					<img src="" alt="">
-				</div>
-				<div class="cartext"> <!--flex direction row-->
-					<div class="pure"> <!-- flex direction column-->
+			<div class="cars-container"> <!-- flex direction row -->
+
+				<div class="coupe"> <!--flex-direction row-->
+					
+					<div class="title">
+						<h3>The Coupe</h3> 
+					</div>
+
+					<div class="pure"> <!--flex direction column-->
+						<img src="src/img/ev-nav-pure-Blue.png" alt="blue car">
 						<h3>Pure</h3>
 						<p>Starting at</p>
 						<p>$23,900</p>
 						<a href="#">View Details ></a>
 					</div>
-					<div class="passion"> <!--flex direction column-->
+					
+					<div class="passionA"> <!--flex direction column-->
+						<img src="src/img/ev-nav-passion-Gray.png" alt="blue car">
 						<h3>Passion</h3>
 						<p>Starting at</p>
 						<p>$25,390</p>
 						<a href="#">View Details ></a>
 					</div>
+	
 				</div>
-			</div>
 
-			<div class="cabrio"><!--display: flex; flex-direction column-->
-				<div class="title2"> <!-- display inlline block-->
-					<h3>The Cabrio</h3>
-				</div>
-				<div class="cars"> <!--flex direction row-->
-					<img src="" alt="">
-					<img src="" alt="">
-				</div>
-				<div class="cartext"> <!--flex direction row-->
-					<div class="passion"> <!--flex direction column-->
+				<div class="cabrio"> <!--flex-direction row-->
+
+					<div class="title"> 
+						<h3>The Cabrio</h3> 
+					</div>
+	
+					<div class="passionB"> <!--flex direction column-->
+						<img src="src/img/ev-nav-cabrio-passion-Orange.png" alt="orange car">
 						<h3>Passion</h3>
 						<p>Starting at</p>
 						<p>$28,100</p>
 						<a href="#">View Details ></a>
 					</div>
+					
 					<div class="prime"> <!--flex direction column-->
+						<img src="src/img/ev-nav-cabrio-prime-White.png" alt="white car">
 						<h3>Prime</h3>
 						<p>Starting at</p>
 						<p>$29,100</p>
 						<a href="#">View Details ></a>
 					</div>
+	
 				</div>
+
 			</div>
 
 		</section>
@@ -207,10 +215,10 @@
 					<a href="#"></a>
 				</div>
 			</div>
-			
+
 		</footer>
 
-
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 		<script src="dist/js/main.js"></script>
 
