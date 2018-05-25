@@ -1100,8 +1100,30 @@ h2 {
 	}
 }
 
+.modelsTitle {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+@media screen and (max-width: 714px) {
+	.modelsTitle {
+		margin-bottom: 23%;
+	}
+}
+
+.modelsTitle h1 {
+	text-align: center;
+	white-space: nowrap;
+	letter-spacing: 0.2em;
+	font-size: 1.4em;
+	font-family: primetime;
+}
+
 .models {
-	margin: 10% auto;
+	width: 76.6796875%;
+	margin: 5% auto;
 	display: flex;
 }
 
@@ -1111,22 +1133,7 @@ h2 {
 	}
 }
 
-.models .modelsTitle {
-	display: block;
-	position: absolute;
-}
-
-.models .modelsTitle h1 {
-	text-align: center;
-	white-space: nowrap;
-	letter-spacing: 0.2em;
-	font-size: 1.4em;
-	font-family: primetime;
-}
-
 .models .cars-container {
-	justify-content: center;
-	width: 100%;
 	flex-direction: row;
 	display: flex;
 }
@@ -1141,23 +1148,30 @@ h2 {
 	margin-top: 17px;
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: 0.09em;
+	letter-spacing: 0.2em;
 	font-size: 1.2em;
 }
 
 .models .cars-container p {
 	padding: 13px 0;
-	font-size: 1em;
+	font-size: 0.9em;
+	text-transform: uppercase;
 }
 
 .models .cars-container a {
 	white-space: nowrap;
-	padding: 5px 0;
-	font-size: 1em;
+	padding: 6px 0;
+	font-size: 0.9em;
 	transition: .6s ease;
 	color: #383737;
 	text-decoration: none;
 	background-color: #fbbe28;
+}
+
+@media screen and (max-width: 714px) {
+	.models .cars-container a {
+		padding: 8px 0;
+	}
 }
 
 .models .cars-container a:hover {
@@ -1165,38 +1179,49 @@ h2 {
 	background-color: #383737;
 }
 
-.models .cars-container .coupe {
-	display: flex;
-	width: 33.984375%;
-	margin-right: 9.4921875%;
+.models .cars-container .coupe-container {
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 13%;
 }
 
 @media screen and (max-width: 714px) {
-	.models .cars-container .coupe {
-		width: 100%;
-		margin-bottom: 24%;
+	.models .cars-container .coupe-container {
+		margin-right: 0;
 	}
 }
 
-.models .cars-container .coupe .title {
-	text-align: center;
+.models .cars-container .coupe-container .car-title {
 	white-space: nowrap;
+	margin-bottom: 10%;
 }
 
-.models .cars-container .coupe .title h3 {
+.models .cars-container .coupe-container .car-title h3 {
 	font-family: primetime, sans-serif;
 	font-style: normal;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 100;
+	font-size: 1em;
 	letter-spacing: 0.4em;
 }
 
-.models .cars-container .coupe .pure {
+.models .cars-container .coupe-container .coupe {
+	display: flex;
+	width: 100%;
+}
+
+@media screen and (max-width: 714px) {
+	.models .cars-container .coupe-container .coupe {
+		margin-bottom: 24%;
+	}
+}
+
+.models .cars-container .coupe-container .coupe .pure {
 	margin-right: 10%;
 }
 
-.models .cars-container .coupe .pure, .models .cars-container .coupe .passionA {
+.models .cars-container .coupe-container .coupe .pure, .models .cars-container .coupe-container .coupe .passionA {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -1204,27 +1229,41 @@ h2 {
 	width: 50%;
 }
 
-.models .cars-container .coupe .pure img, .models .cars-container .coupe .passionA img {
+.models .cars-container .coupe-container .coupe .pure img, .models .cars-container .coupe-container .coupe .passionA img {
 	width: 100%;
 }
 
-.models .cars-container .cabrio {
+.models .cars-container .cabrio-container {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.models .cars-container .cabrio-container .car-title {
+	white-space: nowrap;
+	margin-bottom: 10%;
+}
+
+.models .cars-container .cabrio-container .car-title h3 {
+	font-family: primetime, sans-serif;
+	font-style: normal;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 1em;
+	letter-spacing: 0.4em;
+}
+
+.models .cars-container .cabrio-container .cabrio {
 	display: flex;
-	width: 33.984375%;
+	width: 100%;
 }
 
-@media screen and (max-width: 714px) {
-	.models .cars-container .cabrio {
-		width: 100%;
-	}
-}
-
-.models .cars-container .cabrio .title {
+.models .cars-container .cabrio-container .cabrio .title {
 	text-align: center;
 	white-space: nowrap;
 }
 
-.models .cars-container .cabrio .title h3 {
+.models .cars-container .cabrio-container .cabrio .title h3 {
 	font-family: 'primetime', sans-serif;
 	font-style: normal;
 	text-align: center;
@@ -1233,11 +1272,11 @@ h2 {
 	letter-spacing: 0.4em;
 }
 
-.models .cars-container .cabrio .passionB {
+.models .cars-container .cabrio-container .cabrio .passionB {
 	margin-right: 10%;
 }
 
-.models .cars-container .cabrio .passionB, .models .cars-container .cabrio .prime {
+.models .cars-container .cabrio-container .cabrio .passionB, .models .cars-container .cabrio-container .cabrio .prime {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -1245,7 +1284,7 @@ h2 {
 	width: 50%;
 }
 
-.models .cars-container .cabrio .passionB img, .models .cars-container .cabrio .prime img {
+.models .cars-container .cabrio-container .cabrio .passionB img, .models .cars-container .cabrio-container .cabrio .prime img {
 	width: 100%;
 }
 

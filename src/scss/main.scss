@@ -848,33 +848,40 @@ h2{
 }
 
 
+//OUR MODELS
+.modelsTitle{
+	@media screen and (max-width: 714px){
+		margin-bottom: 23%;
+	}
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 5%;
 
+	h1{
+		text-align: center;
+		white-space: nowrap;
+		letter-spacing: 0.2em;
+		font-size: 1.4em;
+		font-family: primetime;
+	}
+}
+
+
+
+// CARS 
 .models{
 	@media screen and (max-width: 714px){
 		width: 80%;
 	}
-	margin: 10% auto;
+	width: 76.6796875%;
+	margin: 5% auto;
 	display: flex;
-
-	.modelsTitle{
-		display: block;
-		position: absolute;
-
-		h1{
-			text-align: center;
-			white-space: nowrap;
-			letter-spacing: 0.2em;
-			font-size: 1.4em;
-			font-family: primetime;
-		}
-	}
 
 	.cars-container{
 		@media screen and (max-width: 714px){
 			flex-direction: column;
 		}
-		justify-content: center;
-		width: 100%;
 		flex-direction: row;
 		display: flex;
 
@@ -882,19 +889,23 @@ h2{
 			margin-top: 17px;
 			text-transform: uppercase;
 			font-weight: bold;
-			letter-spacing: 0.09em;
+			letter-spacing: 0.2em;
 			font-size: 1.2em;
 		}
 
 		p{
 			padding: 13px 0;
-			font-size: 1em;
+			font-size: 0.9em;
+			text-transform: uppercase;
 		}
 
 		a{
+			@media screen and (max-width: 714px){
+				padding: 8px 0;
+			}
 			white-space: nowrap;
-			padding: 5px 0;
-			font-size: 1em;
+			padding: 6px 0;
+			font-size: 0.9em;
 			transition: .6s ease;
 			color: #383737;
 			text-decoration: none;
@@ -905,85 +916,116 @@ h2{
 			}
 		}
 
-		.coupe{
+		//COUPE
+		.coupe-container{
 			@media screen and (max-width: 714px){
-				width: 100%;
-				margin-bottom: 24%;
+				margin-right: 0;
 			}
-			display: flex;
-			width: 33.984375%; 
-			margin-right: 9.4921875%;
+			flex-direction: column;
+			justify-content: center;
+			margin-right: 13%;
 
-			.title{
-				text-align: center;
+			.car-title{
 				white-space: nowrap;
-
+				margin-bottom: 10%;
+		
 				h3{
 					font-family: primetime, sans-serif;
 					font-style: normal;
 					text-align: center;
 					text-transform: uppercase;
-					font-weight: 700;
+					font-weight: 100;
+					font-size: 1em;
 					letter-spacing: 0.4em;
 				}
 			}
-
-			.pure{
-				margin-right: 10%;
-			}
-
-			.pure, .passionA{
+			
+			.coupe{
+				@media screen and (max-width: 714px){
+					margin-bottom: 24%;
+				}
 				display: flex;
-				flex-direction: column;
-				text-align: center;
-				font-family: 'ubuntu titling', sans-serif;
-				width: 50%;
-
-				img{
-					width: 100%;
+				width: 100%;
+	
+				.pure{
+					margin-right: 10%;
+				}
+	
+				.pure, .passionA{
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					font-family: 'ubuntu titling', sans-serif;
+					width: 50%;
+	
+					img{
+						width: 100%;
+					}
 				}
 			}
 		}
 
-		.cabrio{
-			@media screen and (max-width: 714px){
-				width: 100%;
-			}
-			display: flex;
-			width: 33.984375%;
-
-			.title{
-				text-align: center;
-				white-space: nowrap;
-
+		//CABRIO
+		.cabrio-container{
+			flex-direction: column;
+			justify-content: center;
+		
+		
+			.car-title{
+				white-space: nowrap;				
+				margin-bottom: 10%;
+		
 				h3{
-					font-family: 'primetime', sans-serif;
+					font-family: primetime, sans-serif;
 					font-style: normal;
 					text-align: center;
 					text-transform: uppercase;
-					font-weight: 700;
+					font-weight: 100;
+					font-size: 1em;
 					letter-spacing: 0.4em;
 				}
 			}
-
-			.passionB{
-				margin-right: 10%;
-			}
-
-			.passionB, .prime{
+		
+			.cabrio{
 				display: flex;
-				flex-direction: column;
-				text-align: center;
-				font-family: 'ubuntu titling', sans-serif;
-				width: 50%;
-
-				img{
-					width: 100%;
+				width: 100%;
+	
+				.title{
+					text-align: center;
+					white-space: nowrap;
+	
+					h3{
+						font-family: 'primetime', sans-serif;
+						font-style: normal;
+						text-align: center;
+						text-transform: uppercase;
+						font-weight: 700;
+						letter-spacing: 0.4em;
+					}
 				}
-
+	
+				.passionB{
+					margin-right: 10%;
+				}
+	
+				.passionB, .prime{
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					font-family: 'ubuntu titling', sans-serif;
+					width: 50%;
+	
+					img{
+						width: 100%;
+					}
+	
+				}
+				
 			}
 			
 		}
+
+		
 	}
 		
 }
