@@ -850,10 +850,11 @@ h2{
 
 
 .models{
-	margin: 0 auto;
+	@media screen and (max-width: 714px){
+		width: 80%;
+	}
+	margin: 10% auto;
 	display: flex;
-	justify-content: center;
-	width: 75.625%;
 
 	.modelsTitle{
 		display: block;
@@ -869,6 +870,11 @@ h2{
 	}
 
 	.cars-container{
+		@media screen and (max-width: 714px){
+			flex-direction: column;
+		}
+		justify-content: center;
+		width: 100%;
 		flex-direction: row;
 		display: flex;
 
@@ -877,16 +883,18 @@ h2{
 			text-transform: uppercase;
 			font-weight: bold;
 			letter-spacing: 0.09em;
-			font-size: 1.4em;
+			font-size: 1.2em;
 		}
 
 		p{
 			padding: 13px 0;
-			font-size: 1.1em;
+			font-size: 1em;
 		}
 
 		a{
-			font-size: 1.1em;
+			white-space: nowrap;
+			padding: 5px 0;
+			font-size: 1em;
 			transition: .6s ease;
 			color: #383737;
 			text-decoration: none;
@@ -897,14 +905,14 @@ h2{
 			}
 		}
 
-		.passionA a, .pure a, .passionB a, .prime a{
-			padding: 10px;
-			margin: 0 100px;
-		}
-
-
 		.coupe{
+			@media screen and (max-width: 714px){
+				width: 100%;
+				margin-bottom: 24%;
+			}
 			display: flex;
+			width: 33.984375%; 
+			margin-right: 9.4921875%;
 
 			.title{
 				text-align: center;
@@ -920,20 +928,29 @@ h2{
 				}
 			}
 
+			.pure{
+				margin-right: 10%;
+			}
+
 			.pure, .passionA{
 				display: flex;
 				flex-direction: column;
 				text-align: center;
 				font-family: 'ubuntu titling', sans-serif;
+				width: 50%;
 
 				img{
-
+					width: 100%;
 				}
 			}
 		}
 
 		.cabrio{
+			@media screen and (max-width: 714px){
+				width: 100%;
+			}
 			display: flex;
+			width: 33.984375%;
 
 			.title{
 				text-align: center;
@@ -949,14 +966,19 @@ h2{
 				}
 			}
 
+			.passionB{
+				margin-right: 10%;
+			}
+
 			.passionB, .prime{
 				display: flex;
 				flex-direction: column;
 				text-align: center;
 				font-family: 'ubuntu titling', sans-serif;
+				width: 50%;
 
 				img{
-
+					width: 100%;
 				}
 
 			}

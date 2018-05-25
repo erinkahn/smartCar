@@ -1101,10 +1101,14 @@ h2 {
 }
 
 .models {
-	margin: 0 auto;
+	margin: 10% auto;
 	display: flex;
-	justify-content: center;
-	width: 75.625%;
+}
+
+@media screen and (max-width: 714px) {
+	.models {
+		width: 80%;
+	}
 }
 
 .models .modelsTitle {
@@ -1121,8 +1125,16 @@ h2 {
 }
 
 .models .cars-container {
+	justify-content: center;
+	width: 100%;
 	flex-direction: row;
 	display: flex;
+}
+
+@media screen and (max-width: 714px) {
+	.models .cars-container {
+		flex-direction: column;
+	}
 }
 
 .models .cars-container h4 {
@@ -1130,16 +1142,18 @@ h2 {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.09em;
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 .models .cars-container p {
 	padding: 13px 0;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .models .cars-container a {
-	font-size: 1.1em;
+	white-space: nowrap;
+	padding: 5px 0;
+	font-size: 1em;
 	transition: .6s ease;
 	color: #383737;
 	text-decoration: none;
@@ -1151,13 +1165,17 @@ h2 {
 	background-color: #383737;
 }
 
-.models .cars-container .passionA a, .models .cars-container .pure a, .models .cars-container .passionB a, .models .cars-container .prime a {
-	padding: 10px;
-	margin: 0 100px;
-}
-
 .models .cars-container .coupe {
 	display: flex;
+	width: 33.984375%;
+	margin-right: 9.4921875%;
+}
+
+@media screen and (max-width: 714px) {
+	.models .cars-container .coupe {
+		width: 100%;
+		margin-bottom: 24%;
+	}
 }
 
 .models .cars-container .coupe .title {
@@ -1174,15 +1192,31 @@ h2 {
 	letter-spacing: 0.4em;
 }
 
+.models .cars-container .coupe .pure {
+	margin-right: 10%;
+}
+
 .models .cars-container .coupe .pure, .models .cars-container .coupe .passionA {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	font-family: 'ubuntu titling', sans-serif;
+	width: 50%;
+}
+
+.models .cars-container .coupe .pure img, .models .cars-container .coupe .passionA img {
+	width: 100%;
 }
 
 .models .cars-container .cabrio {
 	display: flex;
+	width: 33.984375%;
+}
+
+@media screen and (max-width: 714px) {
+	.models .cars-container .cabrio {
+		width: 100%;
+	}
 }
 
 .models .cars-container .cabrio .title {
@@ -1199,11 +1233,20 @@ h2 {
 	letter-spacing: 0.4em;
 }
 
+.models .cars-container .cabrio .passionB {
+	margin-right: 10%;
+}
+
 .models .cars-container .cabrio .passionB, .models .cars-container .cabrio .prime {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	font-family: 'ubuntu titling', sans-serif;
+	width: 50%;
+}
+
+.models .cars-container .cabrio .passionB img, .models .cars-container .cabrio .prime img {
+	width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
