@@ -416,8 +416,10 @@ p{
 
 
 .vertical-line{
+	// position: fixed;
 	transition: 4s;
 	position: relative;
+	z-index: -1;
 	//hide dots 
 	.dot1, .dot2, .dot3, .dot4{
 		display: none;
@@ -425,14 +427,20 @@ p{
 
 	&.show{
 		transform: scale(1.1); 
-		top: 100px;
-		left: 13%;
+		top: 68px;
+		left: 8%;
 		position: fixed;
 		height: 240px;
 		width: 2px;
 		background-color:#fbbe28;
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 516px){
 			top: 80px;
+		}
+		@media screen and (min-width: 632px){
+			top: 99px;
+		}
+		@media screen and (min-width: 768px){
+			top: 77px;
 			left: 4.5%;
 		}
 		@media screen and (min-width: 1024px){

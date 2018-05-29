@@ -512,6 +512,7 @@ p {
 .vertical-line {
 	transition: 4s;
 	position: relative;
+	z-index: -1;
 }
 
 .vertical-line .dot1, .vertical-line .dot2, .vertical-line .dot3, .vertical-line .dot4 {
@@ -520,17 +521,29 @@ p {
 
 .vertical-line.show {
 	transform: scale(1.1);
-	top: 100px;
-	left: 13%;
+	top: 68px;
+	left: 8%;
 	position: fixed;
 	height: 240px;
 	width: 2px;
 	background-color: #fbbe28;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 516px) {
 	.vertical-line.show {
 		top: 80px;
+	}
+}
+
+@media screen and (min-width: 632px) {
+	.vertical-line.show {
+		top: 99px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.vertical-line.show {
+		top: 77px;
 		left: 4.5%;
 	}
 }
