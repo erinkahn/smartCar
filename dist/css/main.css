@@ -1371,6 +1371,7 @@ h2 {
 	margin: auto 16.015625%;
 	border: 5px solid #fbbe28;
 	width: 67.96875%;
+	overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
@@ -1384,6 +1385,10 @@ h2 {
 .gallery .gallerySlide img {
 	width: 100%;
 	height: 23.4375%;
+}
+
+.gallery .gallerySlide img:last-child {
+	display: none;
 }
 
 .gallery .slideCircles {
@@ -1413,6 +1418,10 @@ h2 {
 		height: 12px;
 		margin: 0 3%;
 	}
+}
+
+.exterior.gallerySlide {
+	display: none;
 }
 
 .callToAction {
@@ -1556,12 +1565,17 @@ footer .socialIcons {
 	flex-direction: column;
 	display: flex;
 	margin-right: 8%;
-	width: 18%;
 }
 
 @media screen and (max-width: 767px) {
 	footer .socialIcons {
 		width: 40%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	footer .socialIcons {
+		width: 18%;
 	}
 }
 
@@ -1588,7 +1602,7 @@ footer .socialIcons div a {
 
 @media screen and (min-width: 1024px) {
 	footer .socialIcons div a {
-		padding: 0 5%;
+		padding: 0 7%;
 	}
 }
 
@@ -1606,7 +1620,7 @@ footer .socialIcons div a {
 
 @media screen and (min-width: 768px) {
 	footer .socialIcons div a img {
-		width: 21%;
+		width: 20%;
 	}
 }
 
