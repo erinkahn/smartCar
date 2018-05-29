@@ -1508,4 +1508,111 @@ h2 {
 	color: #fff;
 }
 
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-image: url("../../dist/img/footer.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% auto;
+}
+
+footer .footerText {
+	padding: 7% 0;
+	flex-direction: column;
+	display: flex;
+	margin-left: 8%;
+}
+
+@media screen and (min-width: 1024px) {
+	footer .footerText {
+		padding: 5% 0;
+	}
+}
+
+footer .footerText a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'ubuntu titling', sans-serif;
+	letter-spacing: 0.6em;
+	padding: 13% 0;
+}
+
+@media screen and (min-width: 1024px) {
+	footer .footerText a {
+		padding: 19% 0;
+		font-size: 1.1em;
+	}
+}
+
+footer .footerText a:hover {
+	color: #fbbe28;
+}
+
+footer .socialIcons {
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+	margin-right: 8%;
+	width: 18%;
+}
+
+@media screen and (max-width: 767px) {
+	footer .socialIcons {
+		width: 40%;
+	}
+}
+
+footer .socialIcons div {
+	flex-direction: row;
+	padding: 6% 0;
+}
+
+@media screen and (max-width: 767px) {
+	footer .socialIcons div {
+		padding: 5% 0;
+	}
+}
+
+footer .socialIcons div a {
+	padding: 0 5%;
+}
+
+@media screen and (min-width: 768px) {
+	footer .socialIcons div a {
+		padding: 0 6%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer .socialIcons div a {
+		padding: 0 5%;
+	}
+}
+
+@media screen and (max-width: 509px) {
+	footer .socialIcons div a img {
+		width: 23%;
+	}
+}
+
+@media screen and (min-width: 510px) {
+	footer .socialIcons div a img {
+		width: 17%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	footer .socialIcons div a img {
+		width: 21%;
+	}
+}
+
+footer .socialIcons div a img:hover {
+	background-color: #fff;
+	border-radius: 90%;
+}
+
 /*# sourceMappingURL=main.css.map */

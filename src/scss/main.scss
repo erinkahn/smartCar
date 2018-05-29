@@ -1218,7 +1218,89 @@ h2{
 
 
 
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
+	background-image: url('../../dist/img/footer.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% auto;
+
+	.footerText{
+		padding: 7% 0;
+		flex-direction: column;
+		display: flex;
+		margin-left: 8%;
+		@media screen and (min-width: 1024px){
+			padding: 5% 0;
+		}
+
+		a{
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-family: 'ubuntu titling', sans-serif;
+			letter-spacing: 0.6em;
+			padding: 13% 0;
+			@media screen and (min-width: 1024px){
+				padding: 19% 0;
+				font-size: 1.1em;
+			}
+			&:hover{
+				color: #fbbe28;
+			}
+		}
+	}
+
+	.socialIcons{
+		justify-content: center;
+		flex-direction: column;
+		display: flex;
+		margin-right: 8%;
+		@media screen and (max-width: 767px){
+			width: 40%;
+		}
+	
+		width: 18%;
+
+		div{
+			flex-direction: row;
+			@media screen and (max-width: 767px){
+				padding: 5% 0;
+			}
+			padding: 6% 0;
+
+			a{
+				padding: 0 5%;
+				@media screen and (min-width:768px){
+					padding: 0 6%;
+				}
+				@media screen and (min-width: 1024px){
+					padding: 0 5%;
+				}
+
+				img{
+					@media screen and (max-width: 509px){
+						width: 23%;
+					}
+					@media screen and (min-width: 510px){
+						width: 17%;
+					}
+					@media screen and (min-width: 768px){
+						width: 21%;
+					}
+
+					&:hover{
+						background-color: #fff;
+						border-radius: 90%;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 
