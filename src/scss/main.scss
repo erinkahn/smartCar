@@ -373,6 +373,7 @@ p{
 
 
 .logo {
+	// top: 96%;
 	position: fixed;
 	@media screen and (max-width: 573px){
 		transform: translateY(-46%);
@@ -1096,11 +1097,12 @@ h2{
 		@media screen and (max-width: 767px){
 			width: 90%;
 			margin: auto 5%;
+			border: 3px solid #fbbe28;
 		}
 		justify-content: center;
 		display: flex;
 		margin: auto 16.015625%;
-		border: 1px solid #fbbe28;
+		border: 5px solid #fbbe28;
 		width: 67.96875%;
 		
 
@@ -1134,3 +1136,93 @@ h2{
 	}
 
 }
+
+
+.callToAction{
+	margin-bottom: 30%;
+	@media screen and (min-width: 768px){
+		margin-bottom: 20%;
+	}
+
+	.community{
+		margin-bottom: 5%;
+		@media screen and (min-width: 1224px){
+			margin-bottom: 2%;
+		}
+
+		h1{
+			text-align: center;
+			white-space: nowrap;
+			letter-spacing: 0.2em;
+			font-size: 1.4em;
+			font-family: primetime;
+			padding-bottom: 2%;
+		}
+	}
+
+	.buttons{
+		display: flex;
+		justify-content: center;
+		margin: auto 10.8984375%;
+		@media screen and (max-width: 767px){
+			flex-direction: column;
+		}	
+		
+		a{
+			transition: 2s ease;
+			@media screen and (max-width: 767px){
+				margin: 4%;
+				padding: 5%;
+			}	
+			min-width: 183px;
+			@media screen and (min-width: 1024px){
+				flex-direction: column;
+				min-width: 228px;
+				margin: 0 3%;
+			}
+			@media screen and (min-width: 1224px){
+				min-width: 300px;
+				margin: 0 2%;
+				font-size: 1em;
+			}
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: 'ubuntu titling', sans-serif;
+			padding: 2% 4%;
+			
+			margin: 0 3%;
+			white-space: nowrap;
+			font-size: 0.8em;
+			color: #fff;
+			background-color: #636363;
+
+			&:hover{
+				background-color: #000;
+			}
+
+			&:first-child{
+				color: #404040;
+				background-color: #fbbe28;
+
+				&:hover{
+					background-color: #404040;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

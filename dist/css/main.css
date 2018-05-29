@@ -1369,7 +1369,7 @@ h2 {
 	justify-content: center;
 	display: flex;
 	margin: auto 16.015625%;
-	border: 1px solid #fbbe28;
+	border: 5px solid #fbbe28;
 	width: 67.96875%;
 }
 
@@ -1377,6 +1377,7 @@ h2 {
 	.gallery .gallerySlide {
 		width: 90%;
 		margin: auto 5%;
+		border: 3px solid #fbbe28;
 	}
 }
 
@@ -1412,6 +1413,99 @@ h2 {
 		height: 12px;
 		margin: 0 3%;
 	}
+}
+
+.callToAction {
+	margin-bottom: 30%;
+}
+
+@media screen and (min-width: 768px) {
+	.callToAction {
+		margin-bottom: 20%;
+	}
+}
+
+.callToAction .community {
+	margin-bottom: 5%;
+}
+
+@media screen and (min-width: 1224px) {
+	.callToAction .community {
+		margin-bottom: 2%;
+	}
+}
+
+.callToAction .community h1 {
+	text-align: center;
+	white-space: nowrap;
+	letter-spacing: 0.2em;
+	font-size: 1.4em;
+	font-family: primetime;
+	padding-bottom: 2%;
+}
+
+.callToAction .buttons {
+	display: flex;
+	justify-content: center;
+	margin: auto 10.8984375%;
+}
+
+@media screen and (max-width: 767px) {
+	.callToAction .buttons {
+		flex-direction: column;
+	}
+}
+
+.callToAction .buttons a {
+	transition: 2s ease;
+	min-width: 183px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'ubuntu titling', sans-serif;
+	padding: 2% 4%;
+	margin: 0 3%;
+	white-space: nowrap;
+	font-size: 0.8em;
+	color: #fff;
+	background-color: #636363;
+}
+
+@media screen and (max-width: 767px) {
+	.callToAction .buttons a {
+		margin: 4%;
+		padding: 5%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.callToAction .buttons a {
+		flex-direction: column;
+		min-width: 228px;
+		margin: 0 3%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.callToAction .buttons a {
+		min-width: 300px;
+		margin: 0 2%;
+		font-size: 1em;
+	}
+}
+
+.callToAction .buttons a:hover {
+	background-color: #000;
+}
+
+.callToAction .buttons a:first-child {
+	color: #404040;
+	background-color: #fbbe28;
+}
+
+.callToAction .buttons a:first-child:hover {
+	background-color: #404040;
+	color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
