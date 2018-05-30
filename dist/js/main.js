@@ -20,34 +20,69 @@ document.querySelector('.mobile-menu img').addEventListener('click', function ()
 // gallery images
 
 
+var dots = document.querySelectorAll('.slideCircles div');
+
+var interiorImages = document.querySelectorAll('.interior.gallerySlide img');
+
+var exteriorImages = document.querySelectorAll('.exterior.gallerySlide img');
+
 //when you click interior, it shows you all interior images and hides exterior images
 document.querySelector('.extAndInt h4:first-child').addEventListener('click', function () {
 
+    //show interior images and hide exterior images
     document.querySelector('.interior.gallerySlide').style.display = 'flex';
     document.querySelector('.exterior.gallerySlide').style.display = 'none';
 
-    var interiorDots = document.querySelectorAll('.slideCircles div');
-    var interiorImages = document.querySelectorAll('.interior.gallerySlide img');
-    var currentDot = 0;
-    var currentImage = 0;
-
-    //loop through dots and images
-    for (var i = 0; i < interiorDots.length; i++) {
-        interiorDots[i].addEventListener('click', function () {});
-        dot[i].addEventListener('click', function () {
-            for (var _i = 0; _i < interiorImages.length; _i++) {
-                interiorImages[_i].classList.remove('active');
-            }
-        });
-    }
+    // make h4 active when clicked - change color to orange
+    document.querySelector('.extAndInt h4:last-child a').classList.remove('active');
+    document.querySelector('.extAndInt h4:first-child a').classList.add('active');
 });
 
 //when you click exterior, it shows you all exterior images and hide interior images
 document.querySelector('.extAndInt h4:last-child').addEventListener('click', function () {
 
+    // show exterior images and hide interior images
     document.querySelector('.exterior.gallerySlide').style.display = 'flex';
     document.querySelector('.interior.gallerySlide').style.display = 'none';
 
-    //loop through dots and images
+    // make h4 active when clicked - change color to orange
+    document.querySelector('.extAndInt h4:first-child a').classList.remove('active');
+    document.querySelector('.extAndInt h4:last-child a').classList.add('active');
+});
+
+//loop through dots 
+
+var _loop = function _loop(i) {
+    console.log('add click listener to dot ' + i);
+
+    // when you click each dot (i)
+    dots[i].addEventListener('click', function () {
+        console.log("you clicked dot number " + i);
+
+        // loop through interior images and hide them...only show the one clicked i 
+        for (var j = 0; j < interiorImages.length; j++) {
+            interiorImages[j].style.display = 'none';
+        }
+
+        // loop through exterior images and hide them all...only show the one clicked i
+        for (var k = 0; k < exteriorImages.length; k++) {
+            exteriorImages[k].style.display = 'none';
+        }
+
+        // make interior image i display block - show just the one clicked
+        interiorImages[i].style.display = 'block';
+
+        // make exterior image i display block - show just the one clicked
+        exteriorImages[i].style.display = 'block';
+    });
+};
+
+for (var i = 0; i < dots.length; i++) {
+    _loop(i);
+}
+
+// scroll effects
+window.addEventListener("scroll", function () {
+    console.log("scrolling!", window.scrollY);
 });
 //# sourceMappingURL=main.js.map
