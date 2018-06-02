@@ -82,7 +82,8 @@ for (var i = 0; i < dots.length; i++) {
 }
 
 // scroll effects
-window.addEventListener("scroll", function () {
-    console.log("scrolling!", window.scrollY);
-});
+// window.addEventListener("scroll", function() {
+//     console.log("scrolling!", window.scrollY)
+// })
+// this shit is hard use waypoints instead
 //# sourceMappingURL=main.js.map
