@@ -642,7 +642,7 @@ h2 {
 .middle-top .headline h2 {
 	position: absolute;
 	font-size: 0.8em;
-	padding: 13px 24px;
+	padding: 13px 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -651,10 +651,29 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.middle-top .headline h2 {
+		padding: 14px 59px;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-top .headline h2 {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.middle-top .headline h2 {
+		font-size: 1.3em;
+	}
+}
+
 .middle-top .flexrow-items {
-	display: block;
+	display: inline-block;
 	width: 75.6640625%;
-	margin: 0% auto;
+	margin: auto 10.859375%;
+	float: left;
 }
 
 .middle-top .flexrow-items div {
@@ -678,11 +697,11 @@ h2 {
 	.middle-top .flexrow-items div {
 		background-image: url("../img/interior.jpg");
 		background-repeat: no-repeat;
-		height: 100%;
-		background-position: center;
+		height: 0%;
+		padding-bottom: 38%;
 		background-size: 100%;
 		width: 65%;
-		margin-top: -25px;
+		margin-top: 24px;
 		float: left;
 	}
 }
@@ -697,6 +716,39 @@ h2 {
 	font-size: 0.9em;
 	line-height: 1.5em;
 	padding-bottom: 10%;
+}
+
+@media screen and (min-width: 768px) {
+	.middle-top .flexrow-items p {
+		padding-left: 3%;
+		float: left;
+		margin-top: 9%;
+		width: 33%;
+		line-height: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.middle-top .flexrow-items p {
+		font-size: 1em;
+		width: 29%;
+		padding-left: 5%;
+		line-height: 1.9em;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-top .flexrow-items p {
+		width: 33%;
+		line-height: 2.4em;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.middle-top .flexrow-items p {
+		width: 28%;
+		font-size: 1.03em;
+	}
 }
 
 .middle-middle {
