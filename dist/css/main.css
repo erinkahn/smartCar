@@ -674,6 +674,7 @@ h2 {
 	width: 75.6640625%;
 	margin: auto 10.859375%;
 	float: left;
+	padding-bottom: 26%;
 }
 
 .middle-top .flexrow-items div {
@@ -712,6 +713,7 @@ h2 {
 }
 
 .middle-top .flexrow-items p {
+	position: relative;
 	font-family: avenir next;
 	font-size: 0.9em;
 	line-height: 1.5em;
@@ -843,6 +845,7 @@ h2 {
 .middle-middle .right-side-car {
 	position: relative;
 	margin-top: -310px;
+	padding-bottom: 26%;
 }
 
 @media screen and (min-width: 501px) {
@@ -1024,26 +1027,26 @@ h2 {
 		line-height: 1.7em;
 		margin-left: 11.2%;
 		margin-bottom: 0px;
+		font-size: 0.92em;
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	.middle-bottom .flexcolumn-items p {
 		line-height: 2em;
-		font-size: 0.95em;
+		font-size: 1em;
 	}
 }
 
 @media screen and (min-width: 1140px) {
 	.middle-bottom .flexcolumn-items p {
-		font-size: 0.99em;
 		line-height: 2.3em;
 	}
 }
 
 @media screen and (min-width: 1336px) {
 	.middle-bottom .flexcolumn-items p {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		line-height: 2.2em;
 	}
 }
