@@ -739,8 +739,9 @@ h2 {
 
 @media screen and (min-width: 1224px) {
 	.middle-top .flexrow-items p {
-		width: 33%;
-		line-height: 2.4em;
+		width: 30%;
+		line-height: 2.8em;
+		margin-top: 8%;
 	}
 }
 
@@ -804,16 +805,20 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.middle-middle .left-side-p p {
+		font-size: 1em;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	.middle-middle .left-side-p p {
 		line-height: 2em;
-		font-size: 0.95em;
 	}
 }
 
 @media screen and (min-width: 1140px) {
 	.middle-middle .left-side-p p {
-		font-size: 0.99em;
 		line-height: 2.3em;
 	}
 }
@@ -821,14 +826,17 @@ h2 {
 @media screen and (min-width: 1224px) {
 	.middle-middle .left-side-p p {
 		padding-right: 25px;
+		margin-top: 20px;
+		line-height: 2.8em;
 	}
 }
 
 @media screen and (min-width: 1336px) {
 	.middle-middle .left-side-p p {
-		font-size: 1.2em;
-		line-height: 2.2em;
+		font-size: 1.03em;
+		margin-top: 66px;
 		padding-right: 28px;
+		width: 90%;
 	}
 }
 
