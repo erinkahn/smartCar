@@ -81,6 +81,52 @@ for (var i = 0; i < dots.length; i++) {
     _loop(i);
 }
 
+// ------------------------------------------------------------------------------------------
+
+// logo active dots ------help
+
+
+//loop through .vertical-line
+// when you click a dot add the class of active
+// remove the class of active
+
+var allVerticalDots = document.querySelectorAll('.dot');
+
+var _loop2 = function _loop2(i) {
+    console.log('allVerticalDots[i]');
+    allVerticalDots[i].addEventListener('click', function () {
+
+        if (allVerticalDots[i].classList.contains('active')) {
+            allVerticalDots[i].classList.remove('active');
+        } else {
+            allVerticalDots[i].classList.add('active');
+        }
+    });
+};
+
+for (var i = 0; i < allVerticalDots.length; i++) {
+    _loop2(i);
+}
+
+// help----------------????
+
+//when you click why smart jump to middle top getSmart id section
+// let middleTop = document.querySelector("#whySmart");
+// let whySmart = middleTop.offsetTop;
+
+// document.querySelector('.vertical-line div:first-child').addEventListener('click', function(){
+//     window.scrollTo(whySmart);
+// })
+
+//when you click models jump to top of models section id
+
+//when you click gallery jump to top of gallery section id
+
+//when you click get smart jump to top of getSmart section id
+
+
+// ------------------------------------------------------------------------------------------
+
 // scroll effects
 // window.addEventListener("scroll", function() {
 //     console.log("scrolling!", window.scrollY)
