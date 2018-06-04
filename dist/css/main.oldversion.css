@@ -619,15 +619,21 @@ h2 {
 }
 
 .middle-top {
-	margin: 40% auto;
-	overflow: hidden;
+	margin: 30% auto;
 	position: relative;
+	padding-bottom: 90%;
+}
+
+@media screen and (min-width: 768px) {
+	.middle-top {
+		padding-bottom: 30%;
+	}
 }
 
 .middle-top .headline {
 	text-align: center;
-	margin: auto 6%;
-	width: 88%;
+	margin: auto 7%;
+	width: 86%;
 }
 
 @media screen and (min-width: 768px) {
@@ -640,14 +646,9 @@ h2 {
 }
 
 .middle-top .headline h2 {
-	font-size: 0.6em;
+	position: absolute;
+	font-size: 0.8em;
 	padding: 13px 20px;
-}
-
-@media screen and (min-width: 570px) {
-	.middle-top .headline h2 {
-		font-size: 0.8em;
-	}
 }
 
 @media screen and (min-width: 768px) {
@@ -656,9 +657,42 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.middle-top .headline h2 {
+		padding: 14px 59px;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-top .headline h2 {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.middle-top .headline h2 {
+		font-size: 1.3em;
+	}
+}
+
 .middle-top .flexrow-items {
-	margin: 0 auto;
-	width: 88%;
+	display: inline-block;
+	width: 75.6640625%;
+	margin: auto 10.859375%;
+	float: left;
+	padding-bottom: 90%;
+}
+
+@media screen and (min-width: 768px) {
+	.middle-top .flexrow-items {
+		padding-bottom: 30%;
+	}
+}
+
+.middle-top .flexrow-items div {
+	margin-top: 10%;
+	position: relative;
+	z-index: -1;
 }
 
 @media screen and (max-width: 767px) {
@@ -666,7 +700,8 @@ h2 {
 		background-image: url("../img/interiorMobile.jpg");
 		background-repeat: no-repeat;
 		height: 0;
-		padding-bottom: 82%;
+		padding-bottom: 86%;
+		background-position: cover;
 		background-size: 100% auto;
 	}
 }
@@ -686,21 +721,15 @@ h2 {
 
 .middle-top .flexrow-items div img {
 	width: 100%;
+	position: relative;
 }
 
 .middle-top .flexrow-items p {
+	position: absolute;
 	font-family: avenir next;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	line-height: 1.5em;
-	margin: 0 auto;
-	width: 90%;
-}
-
-@media screen and (min-width: 570px) {
-	.middle-top .flexrow-items p {
-		font-size: 0.9em;
-		line-height: 1.6em;
-	}
+	padding-bottom: 10%;
 }
 
 @media screen and (min-width: 768px) {
@@ -709,25 +738,52 @@ h2 {
 		float: left;
 		margin-top: 9%;
 		width: 33%;
+		line-height: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.middle-top .flexrow-items p {
+		font-size: 1em;
+		width: 29%;
+		padding-left: 5%;
+		line-height: 1.9em;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-top .flexrow-items p {
+		width: 30%;
+		line-height: 2.8em;
+		margin-top: 8%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.middle-top .flexrow-items p {
+		width: 28%;
+		font-size: 1.03em;
 	}
 }
 
 .middle-middle {
+	width: 90%;
+	margin: auto 5%;
 	position: relative;
-	overflow: hidden;
-	margin: 40% auto;
+	padding-bottom: 90%;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-middle {
 		margin: 0% auto;
 		width: 72.1875%;
+		padding-bottom: 30%;
 	}
 }
 
 .middle-middle .right-side-car {
-	width: 90%;
-	margin: 0 auto;
+	position: absolute;
+	width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -740,7 +796,7 @@ h2 {
 	background-image: url("../img/blueCar.png");
 	background-repeat: no-repeat;
 	height: 0;
-	padding-bottom: 56%;
+	padding-bottom: 53%;
 	background-size: 100% auto;
 }
 
@@ -751,16 +807,10 @@ h2 {
 }
 
 .middle-middle .right-side-car h2 {
-	font-size: 0.6em;
-	padding: 13px 20px;
+	font-size: 0.7em;
+	padding: 13px 8px;
 	text-align: center;
-	margin-bottom: 21px;
-}
-
-@media screen and (min-width: 570px) {
-	.middle-middle .right-side-car h2 {
-		font-size: 0.8em;
-	}
+	margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -768,6 +818,24 @@ h2 {
 		padding: 15px 22px;
 		font-size: 0.8em;
 		margin: 0px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.middle-middle .right-side-car h2 {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.middle-middle .right-side-car h2 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	.middle-middle .right-side-car h2 {
+		font-size: 1.1em;
 	}
 }
 
@@ -779,22 +847,16 @@ h2 {
 @media screen and (min-width: 768px) {
 	.middle-middle .left-side-p {
 		width: 26.41061755%;
+		margin-top: 46px;
 	}
 }
 
 .middle-middle .left-side-p p {
+	position: absolute;
 	font-size: 0.8em;
 	line-height: 1.5em;
 	font-family: avenir next;
-	margin: 0 auto;
-	width: 90%;
-}
-
-@media screen and (min-width: 570px) {
-	.middle-middle .left-side-p p {
-		font-size: 0.9em;
-		line-height: 1.6em;
-	}
+	margin-top: 236px;
 }
 
 @media screen and (min-width: 768px) {
@@ -804,16 +866,36 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1000px) {
+	.middle-middle .left-side-p p {
+		line-height: 2em;
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.middle-middle .left-side-p p {
+		line-height: 2.3em;
+	}
+}
+
+@media screen and (min-width: 1336px) {
+	.middle-middle .left-side-p p {
+		font-size: 1.1em;
+		line-height: 2.2em;
+	}
+}
+
 .middle-bottom {
 	position: relative;
-	overflow: hidden;
-	margin: 40% auto;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-bottom {
-		margin: 0 auto;
+		margin: 25% auto;
 		width: 65.78125%;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -825,29 +907,23 @@ h2 {
 
 .middle-bottom .headline2 {
 	text-align: center;
-	margin: 0 auto;
-	width: 90%;
+	margin: auto 4%;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-bottom .headline2 {
 		right: 37.5%;
-		margin: 0 0 0 16.796875%;
+		margin: 0% 0 0 16.796875%;
 	}
 }
 
 .middle-bottom .headline2 h2 {
-	font-size: 0.6em;
+	position: absolute;
+	font-size: 0.7em;
 	padding: 13px 40px;
 	text-align: center;
 	z-index: 3;
 	text-align: center;
-}
-
-@media screen and (min-width: 570px) {
-	.middle-bottom .headline2 h2 {
-		font-size: 0.8em;
-	}
 }
 
 @media screen and (min-width: 768px) {
@@ -858,46 +934,95 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1000px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.middle-bottom .headline2 h2 {
+		font-size: 1.3em;
+	}
+}
+
 .middle-bottom .flexcolumn-items {
-	margin: 0 auto;
+	display: inline-block;
+	padding-bottom: 100%;
+	margin: auto 6%;
 	width: 90%;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-bottom .flexcolumn-items {
 		width: 83.710938%;
+		margin: auto 0%;
+		padding-bottom: 80%;
 	}
 }
 
 .middle-bottom .flexcolumn-items div {
-	width: 100%;
+	position: absolute;
 	right: 0;
+	width: 88.53919%;
 	background-image: url("../img/smart-on-the-road.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	height: 0;
-	padding-bottom: 52%;
+	padding-bottom: 58.2421875%;
+}
+
+@media screen and (max-width: 767px) {
+	.middle-bottom .flexcolumn-items div {
+		width: 90%;
+		margin: auto 5%;
+	}
 }
 
 .middle-bottom .flexcolumn-items p {
 	font-size: 0.8em;
 	line-height: 1.5em;
 	font-family: avenir next;
-	margin: 0 auto;
-	width: 90%;
-}
-
-@media screen and (min-width: 570px) {
-	.middle-bottom .flexcolumn-items p {
-		font-size: 0.9em;
-		line-height: 1.6em;
-	}
+	margin: 46% auto;
+	position: absolute;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-bottom .flexcolumn-items p {
 		line-height: 1.7em;
 		font-size: 0.92em;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.middle-bottom .flexcolumn-items p {
+		line-height: 2em;
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1140px) {
+	.middle-bottom .flexcolumn-items p {
+		line-height: 2.3em;
+	}
+}
+
+@media screen and (min-width: 1336px) {
+	.middle-bottom .flexcolumn-items p {
+		font-size: 1.1em;
+		line-height: 2.2em;
 	}
 }
 
@@ -1429,4 +1554,4 @@ footer .socialIcons div a img:hover {
 	border-radius: 90%;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.oldversion.css.map */
