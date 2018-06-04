@@ -1155,6 +1155,7 @@ h2 {
 	font-weight: 100;
 	font-size: 1em;
 	letter-spacing: 0.4em;
+	position: relative;
 }
 
 .models .cars-container .coupe-container .coupe {
@@ -1182,6 +1183,7 @@ h2 {
 
 .models .cars-container .coupe-container .coupe .pure img, .models .cars-container .coupe-container .coupe .passionA img {
 	width: 100%;
+	position: relative;
 }
 
 .models .cars-container .cabrio-container {
@@ -1202,6 +1204,7 @@ h2 {
 	font-weight: 100;
 	font-size: 1em;
 	letter-spacing: 0.4em;
+	position: relative;
 }
 
 .models .cars-container .cabrio-container .cabrio {
@@ -1237,6 +1240,7 @@ h2 {
 
 .models .cars-container .cabrio-container .cabrio .passionB img, .models .cars-container .cabrio-container .cabrio .prime img {
 	width: 100%;
+	position: relative;
 }
 
 .gallery {
@@ -1308,6 +1312,7 @@ h2 {
 }
 
 .gallery .gallerySlide {
+	position: relative;
 	justify-content: center;
 	display: flex;
 	margin: auto 16.015625%;
@@ -1338,6 +1343,7 @@ h2 {
 	justify-content: center;
 	flex-direction: row;
 	margin: 4% auto;
+	position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -1387,6 +1393,7 @@ h2 {
 }
 
 .callToAction .community h1 {
+	position: relative;
 	text-align: center;
 	white-space: nowrap;
 	letter-spacing: 0.2em;
@@ -1399,6 +1406,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	margin: auto 10.8984375%;
+	position: relative;
 }
 
 @media screen and (max-width: 767px) {

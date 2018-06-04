@@ -922,6 +922,7 @@ h2{
 					font-weight: 100;
 					font-size: 1em;
 					letter-spacing: 0.4em;
+					position: relative;
 				}
 			}
 			
@@ -945,6 +946,7 @@ h2{
 	
 					img{
 						width: 100%;
+						position: relative;
 					}
 				}
 			}
@@ -968,6 +970,7 @@ h2{
 					font-weight: 100;
 					font-size: 1em;
 					letter-spacing: 0.4em;
+					position: relative;
 				}
 			}
 		
@@ -1002,6 +1005,7 @@ h2{
 	
 					img{
 						width: 100%;
+						position: relative;
 					}
 	
 				}
@@ -1075,7 +1079,7 @@ h2{
 	}
 
 	.gallerySlide{
-
+		position: relative;
 		@media screen and (max-width: 767px){
 			width: 90%;
 			margin: auto 5%;
@@ -1105,6 +1109,7 @@ h2{
 		justify-content: center;
 		flex-direction: row;
 		margin: 4% auto;
+		position: relative;
 		@media screen and (min-width: 768px){
 			margin: 2% auto;
 		}
@@ -1149,6 +1154,7 @@ h2{
 		}
 
 		h1{
+			position: relative;
 			text-align: center;
 			white-space: nowrap;
 			letter-spacing: 0.2em;
@@ -1162,6 +1168,8 @@ h2{
 		display: flex;
 		justify-content: center;
 		margin: auto 10.8984375%;
+		position: relative;
+		
 		@media screen and (max-width: 767px){
 			flex-direction: column;
 		}	
