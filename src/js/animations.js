@@ -78,11 +78,11 @@ $gallery.waypoint(function () {
 
     TweenMax.from('.galleryTitle', 2, { opacity: 0 }); 
     TweenMax.from('.extAndInt', 1, {delay: 0.5, x:150, opacity: 0 });
-    TweenMax.from('.gallerySlide', 2, {delay: 0.8, y :100, opacity:0 }); 
+    TweenMax.from('.gallerySlide', 2, {delay: 0.8, opacity:0 }); 
     TweenMax.from('.slideCircles', 2, {delay: 1, x :-100, opacity:0 }); 
 
   console.log('waypoint');
-}, {offset: '90%'});
+}, {offset: '30%'});
 
 
 
