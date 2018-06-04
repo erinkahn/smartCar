@@ -627,6 +627,7 @@ h2 {
 @media screen and (min-width: 768px) {
 	.middle-top {
 		width: 97.47081712%;
+		margin: 20% 0 0 0;
 	}
 }
 
@@ -754,6 +755,7 @@ h2 {
 @media screen and (min-width: 768px) {
 	.middle-middle {
 		width: 80.1875%;
+		margin: 20% auto;
 	}
 }
 
@@ -868,6 +870,8 @@ h2 {
 @media screen and (min-width: 768px) {
 	.middle-bottom {
 		width: 83.40625%;
+		margin-top: 25%;
+		margin-bottom: 20%;
 	}
 }
 
@@ -972,7 +976,6 @@ h2 {
 	.middle-bottom .flexcolumn-items p {
 		font-size: 1.1em;
 		line-height: 2.9em;
-		max-width: 56.953125%;
 	}
 }
 
@@ -1174,7 +1177,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
 	.gallery {
-		margin-bottom: 20%;
+		margin: 20% auto;
 	}
 }
 

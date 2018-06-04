@@ -520,6 +520,7 @@ h2{
 
 	@media screen and (min-width: 768px){
 		width: 97.47081712%;
+		margin: 20% 0 0 0;
 	}
 
 	.headline{
@@ -623,6 +624,7 @@ h2{
 
 	@media screen and (min-width: 768px){
 		width: 80.1875%;
+		margin: 20% auto;
 	}
 
 	.right-side-car{
@@ -715,6 +717,8 @@ h2{
 
 	@media screen and (min-width: 768px){
 		width: 83.40625%;
+		margin-top: 25%;
+		margin-bottom: 20%;
 	}
 	
 
@@ -789,7 +793,6 @@ h2{
 			@media screen and (min-width: 1440px){
 				font-size: 1.1em;
 				line-height: 2.9em;
-				max-width: 56.953125%;
 			}
 		}
 	}
@@ -991,7 +994,7 @@ h2{
 .gallery{
 	margin-bottom: 50%;
 	@media screen and (min-width: 768px){
-		margin-bottom: 20%;
+		margin: 20% auto;
 	}
 
 	.galleryTitle{
