@@ -235,7 +235,7 @@ p {
 @media screen and (max-width: 767px) {
 	.hero .background1 {
 		height: 33.33333vh;
-		width: 100vw;
+		width: 100%;
 		background-position: center;
 		padding: 0;
 	}
@@ -253,7 +253,7 @@ p {
 @media screen and (max-width: 767px) {
 	.hero .background2 {
 		height: 33.33333vh;
-		width: 100vw;
+		width: 100%;
 		background-position: center;
 		padding: 0;
 	}
@@ -271,7 +271,7 @@ p {
 @media screen and (max-width: 767px) {
 	.hero .background3 {
 		height: 33.33333vh;
-		width: 100vw;
+		width: 100%;
 		background-position: center;
 		padding: 0;
 	}
@@ -329,7 +329,7 @@ p {
 @media screen and (max-width: 767px) {
 	.background1:hover {
 		height: 33.33333vh;
-		width: 100vw;
+		width: 100%;
 		background-position: top;
 	}
 }
@@ -386,7 +386,7 @@ p {
 @media screen and (max-width: 767px) {
 	.background2:hover {
 		height: 33.33333vh;
-		width: 100vw;
+		width: 100%;
 		background-position: bottom;
 	}
 }
@@ -443,56 +443,45 @@ p {
 @media screen and (max-width: 767px) {
 	.background3:hover {
 		height: 33.33333vh;
-		width: 100vw;
+		width: 100%;
 		background-position: top;
 	}
 }
 
 .logo {
-	position: fixed;
+	position: absolute;
+	display: none;
 	left: 20px;
 	width: 90%;
 	z-index: 2;
 }
 
-@media screen and (max-width: 573px) {
-	.logo {
-		transform: translateY(-46%);
-	}
-}
-
-@media screen and (min-width: 574px) {
-	.logo {
-		transform: translateY(-20%);
-	}
-}
-
 @media screen and (min-width: 768px) {
 	.logo {
-		transform: translateY(-40px);
+		transform: translateY(-35px);
+		display: block;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.logo {
-		transform: translateY(-53px);
+		transform: translateY(-45px);
 	}
 }
 
 @media screen and (min-width: 1224px) {
 	.logo {
-		transform: translateY(-63px);
+		transform: translateY(-53px);
 	}
 }
 
 @media screen and (min-width: 1440px) {
 	.logo {
-		transform: translateY(-70px);
+		transform: translateY(-63px);
 	}
 }
 
 .logo img {
-	width: 10%;
 	transition: .5s ease;
 	z-index: 2;
 }
@@ -503,152 +492,15 @@ p {
 	}
 }
 
-.logo img:hover {
-	transform: rotate(90deg);
-	transform-origin: center;
-}
-
-.vertical-line {
-	position: fixed;
-	transition: 4s;
-	z-index: -1;
-}
-
-.vertical-line .dot1, .vertical-line .dot2, .vertical-line .dot3, .vertical-line .dot4 {
-	display: none;
-}
-
-.vertical-line.show {
-	transform: scale(1.1);
-	top: 68px;
-	left: 8%;
-	position: fixed;
-	height: 240px;
-	width: 2px;
-	background-color: #fbbe28;
-}
-
-@media screen and (min-width: 516px) {
-	.vertical-line.show {
-		top: 80px;
-	}
-}
-
-@media screen and (min-width: 632px) {
-	.vertical-line.show {
-		top: 99px;
-	}
-}
-
 @media screen and (min-width: 768px) {
-	.vertical-line.show {
-		top: 77px;
-		left: 4.5%;
+	.logo img {
+		max-width: 10%;
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	.vertical-line.show {
-		top: 100px;
-	}
-}
-
-@media screen and (min-width: 1224px) {
-	.vertical-line.show {
-		top: 120px;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.vertical-line.show {
-		top: 135px;
-	}
-}
-
-.vertical-line.show .dot1, .vertical-line.show .dot2, .vertical-line.show .dot3, .vertical-line.show .dot4 {
-	display: block;
-}
-
-.vertical-line .dot1, .vertical-line .dot2, .vertical-line .dot3, .vertical-line .dot4 {
-	z-index: 2;
-	border: 2px solid #fbbe28;
-	background-color: #fff;
-	width: 11px;
-	height: 11px;
-	border-radius: 90%;
-	left: 11.8%;
-	position: fixed;
-	top: 100px;
-	left: -5px;
-	color: transparent;
-}
-
-.vertical-line .dot1.active, .vertical-line .dot2.active, .vertical-line .dot3.active, .vertical-line .dot4.active {
-	background-color: #fbbe28;
-}
-
-.vertical-line .dot1.active::after, .vertical-line .dot2.active::after, .vertical-line .dot3.active::after, .vertical-line .dot4.active::after {
-	color: black;
-}
-
-.vertical-line .dot1 {
-	top: 60px;
-}
-
-.vertical-line .dot1::after {
-	content: "why smart?";
-	white-space: nowrap;
-	left: 20px;
-	position: absolute;
-	font-family: avenir next;
-	letter-spacing: 0.35em;
-	font-weight: bold;
-	font-size: 0.8em;
-}
-
-.vertical-line .dot2 {
-	top: 120px;
-}
-
-.vertical-line .dot2::after {
-	content: "models";
-	white-space: nowrap;
-	left: 20px;
-	position: absolute;
-	font-family: avenir next;
-	letter-spacing: 0.35em;
-	font-weight: bold;
-	font-size: 0.8em;
-}
-
-.vertical-line .dot3 {
-	top: 180px;
-}
-
-.vertical-line .dot3::after {
-	content: "gallery";
-	white-space: nowrap;
-	left: 20px;
-	position: absolute;
-	font-family: avenir next;
-	letter-spacing: 0.35em;
-	font-weight: bold;
-	font-size: 0.8em;
-}
-
-.vertical-line .dot4 {
-	top: 240px;
-}
-
-.vertical-line .dot4::after {
-	content: "get smart";
-	white-space: nowrap;
-	left: 20px;
-	position: absolute;
-	font-family: avenir next;
-	letter-spacing: 0.35em;
-	font-weight: bold;
-	font-size: 0.8em;
+.logo img:hover {
+	transform: rotate(-90deg);
+	transform-origin: center;
 }
 
 h2 {

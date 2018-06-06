@@ -2,11 +2,14 @@
 
 console.log('Hello World from app.js! \nhey');
 
-document.querySelector('.logo img').addEventListener('click', function () {
-    //show the vertical line menu
-    document.querySelector('.vertical-line').classList.toggle('show');
-    // document.querySelector('.dot1').classList.toggle('show');
-});
+//vertical line under logo
+
+// document.querySelector('.logo img').addEventListener('click', function(){
+//     //show the vertical line menu
+//     document.querySelector('.vertical-line').classList.toggle('show');
+//     // document.querySelector('.dot1').classList.toggle('show');
+// })
+
 
 document.querySelector('.mobile-menu img').addEventListener('click', function () {
     //show the mobile menu
@@ -81,48 +84,30 @@ for (var i = 0; i < dots.length; i++) {
     _loop(i);
 }
 
-// ------------------------------------------------------------------------------------------
+// // ------------------------------------------------------------------------------------------
 
-// logo active dots ------help
+// // logo active dots 
 
 
-//loop through .vertical-line
-// when you click a dot add the class of active
-// remove the class of active
+// //loop through .vertical-line
+// // when you click a dot add the class of active
+// // remove the class of active
 
-var allVerticalDots = document.querySelectorAll('.dot');
+// let allVerticalDots = document.querySelectorAll('.dot');
 
-var _loop2 = function _loop2(i) {
-    console.log('allVerticalDots[i]');
-    allVerticalDots[i].addEventListener('click', function () {
+// for (let i = 0; i < allVerticalDots.length; i++){
+//     console.log('allVerticalDots[i]');
 
-        if (allVerticalDots[i].classList.contains('active')) {
-            allVerticalDots[i].classList.remove('active');
-        } else {
-            allVerticalDots[i].classList.add('active');
-        }
-    });
-};
+//     allVerticalDots[i].addEventListener('click', function() {
 
-for (var i = 0; i < allVerticalDots.length; i++) {
-    _loop2(i);
-}
+//         if (allVerticalDots[i].classList.contains('active')){
+//             allVerticalDots[i].classList.remove('active');
+//         } else {
+//             allVerticalDots[i].classList.add('active');
+//         }
 
-// help----------------????
-
-//when you click why smart jump to middle top getSmart id section
-// let middleTop = document.querySelector("#whySmart");
-// let whySmart = middleTop.offsetTop;
-
-// document.querySelector('.vertical-line div:first-child').addEventListener('click', function(){
-//     window.scrollTo(whySmart);
-// })
-
-//when you click models jump to top of models section id
-
-//when you click gallery jump to top of gallery section id
-
-//when you click get smart jump to top of getSmart section id
+//     })
+// }
 
 
 // ------------------------------------------------------------------------------------------

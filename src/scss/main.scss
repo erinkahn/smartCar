@@ -184,7 +184,7 @@ p{
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
-			width: 100vw;
+			width: 100%;
 			background-position: center;
 			padding: 0;
 		}
@@ -200,7 +200,7 @@ p{
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
-			width: 100vw;
+			width: 100%;
 			background-position: center;
 			padding: 0;
 		}
@@ -216,7 +216,7 @@ p{
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
-			width: 100vw;
+			width: 100%;
 			background-position: center;
 			padding: 0;
 		}
@@ -268,7 +268,7 @@ p{
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
-			width: 100vw;
+			width: 100%;
 			background-position: top;
 		}
 	}
@@ -317,7 +317,7 @@ p{
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
-			width: 100vw;
+			width: 100%;
 			background-position: bottom;
 		}
 	}
@@ -365,7 +365,7 @@ p{
 		background-size: 100% auto;
 		@media screen and (max-width: 767px){
 			height: 33.33333vh;
-			width: 100vw;
+			width: 100%;
 			background-position: top;
 		}
 	}
@@ -373,170 +373,167 @@ p{
 
 
 .logo {
-	position: fixed;
-	@media screen and (max-width: 573px){
-		transform: translateY(-46%);
-	}
-	@media screen and (min-width: 574px){
-		transform: translateY(-20%);
-	}
-	// position: absolute;
+	position: absolute;
+	display: none;
 	left: 20px;
 	width: 90%;
 	z-index: 2;
 	
-	
 	@media screen and (min-width: 768px){
-		transform: translateY(-40px);
+		transform: translateY(-35px);
+		display: block;
 	}
 	@media screen and (min-width: 1024px){
-		transform: translateY(-53px);
+		transform: translateY(-45px);
 	}
 	@media screen and (min-width: 1224px){
-		transform: translateY(-63px);
+		transform: translateY(-53px);
 	}
 	@media screen and (min-width: 1440px){
-		transform: translateY(-70px);
+		transform: translateY(-63px);
 	}
 
 	img{
 		@media screen and (max-width: 767px){
 			width: 18%;
 		}
-		width: 10%;
+		@media screen and (min-width: 768px){
+			max-width: 10%;
+		}
 		transition: .5s ease;
-		
 		z-index: 2;
+
 		&:hover {
-			transform: rotate(90deg);
+			transform: rotate(-90deg);
 			transform-origin: center;
 		}
+
 	}
 }
 
 
-.vertical-line{
-	position: fixed;
-	transition: 4s;
-	// position: relative;
-	z-index: -1;
-	//hide dots 
-	.dot1, .dot2, .dot3, .dot4{
-		display: none;
-	}
+// .vertical-line{
+// 	position: fixed;
+// 	transition: 4s;
+// 	// position: relative;
+// 	z-index: -1;
+// 	//hide dots 
+// 	.dot1, .dot2, .dot3, .dot4{
+// 		display: none;
+// 	}
 
-	&.show{
-		transform: scale(1.1); 
-		top: 68px;
-		left: 8%;
-		position: fixed;
-		height: 240px;
-		width: 2px;
-		background-color:#fbbe28;
-		@media screen and (min-width: 516px){
-			top: 80px;
-		}
-		@media screen and (min-width: 632px){
-			top: 99px;
-		}
-		@media screen and (min-width: 768px){
-			top: 77px;
-			left: 4.5%;
-		}
-		@media screen and (min-width: 1024px){
-			top: 100px;
-		}
-		@media screen and (min-width: 1224px){
-			top: 120px;
-		}
-		@media screen and (min-width: 1440px){
-			top: 135px;
-		}
-		//show dots on logo click
-		.dot1, .dot2, .dot3, .dot4{
-			display: block;
-		}
-	}
+// 	&.show{
+// 		transform: scale(1.1); 
+// 		top: 68px;
+// 		left: 8%;
+// 		position: fixed;
+// 		height: 240px;
+// 		width: 2px;
+// 		background-color:#fbbe28;
+// 		@media screen and (min-width: 516px){
+// 			top: 80px;
+// 		}
+// 		@media screen and (min-width: 632px){
+// 			top: 99px;
+// 		}
+// 		@media screen and (min-width: 768px){
+// 			top: 77px;
+// 			left: 4.5%;
+// 		}
+// 		@media screen and (min-width: 1024px){
+// 			top: 100px;
+// 		}
+// 		@media screen and (min-width: 1224px){
+// 			top: 120px;
+// 		}
+// 		@media screen and (min-width: 1440px){
+// 			top: 135px;
+// 		}
+// 		//show dots on logo click
+// 		.dot1, .dot2, .dot3, .dot4{
+// 			display: block;
+// 		}
+// 	}
 
-	.dot1, .dot2, .dot3, .dot4{
-		z-index: 2;
-		border: 2px solid #fbbe28;
-		background-color: #fff;
-		width: 11px;
-		height: 11px;
-		border-radius: 90%;
-		left: 11.8%;
-		position: fixed;
-		top: 100px;
-		left: -5px;
-		color: transparent;
+// 	.dot1, .dot2, .dot3, .dot4{
+// 		z-index: 2;
+// 		border: 2px solid #fbbe28;
+// 		background-color: #fff;
+// 		width: 11px;
+// 		height: 11px;
+// 		border-radius: 90%;
+// 		left: 11.8%;
+// 		position: fixed;
+// 		top: 100px;
+// 		left: -5px;
+// 		color: transparent;
 
-		&.active{
-			background-color: #fbbe28;
-			&::after{
-				color: black;
-			}
-		}
-	}
+// 		&.active{
+// 			background-color: #fbbe28;
+// 			&::after{
+// 				color: black;
+// 			}
+// 		}
+// 	}
 	
 	
-	.dot1{
-		top: 60px;
-		&::after{
-			content: "why smart?";
-			white-space: nowrap;
-			left: 20px;
-			position: absolute;
-			font-family: avenir next;
-			letter-spacing: 0.35em;
-			font-weight: bold;
-			font-size: 0.8em;
+// 	.dot1{
+// 		top: 60px;
+// 		&::after{
+// 			content: "why smart?";
+// 			white-space: nowrap;
+// 			left: 20px;
+// 			position: absolute;
+// 			font-family: avenir next;
+// 			letter-spacing: 0.35em;
+// 			font-weight: bold;
+// 			font-size: 0.8em;
 			
-		}
-	}
+// 		}
+// 	}
 	
-	.dot2{
-		top: 120px;
-		&::after{
-			content: "models";
-			white-space: nowrap;
-			left: 20px;
-			position: absolute;
-			font-family: avenir next;
-			letter-spacing: 0.35em;
-			font-weight: bold;
-			font-size: 0.8em;
-		}
-	}
+// 	.dot2{
+// 		top: 120px;
+// 		&::after{
+// 			content: "models";
+// 			white-space: nowrap;
+// 			left: 20px;
+// 			position: absolute;
+// 			font-family: avenir next;
+// 			letter-spacing: 0.35em;
+// 			font-weight: bold;
+// 			font-size: 0.8em;
+// 		}
+// 	}
 	
-	.dot3{
-		top: 180px;
-		&::after{
-			content: "gallery";
-			white-space: nowrap;
-			left: 20px;
-			position: absolute;
-			font-family: avenir next;
-			letter-spacing: 0.35em;
-			font-weight: bold;
-			font-size: 0.8em;
-		}
-	}
+// 	.dot3{
+// 		top: 180px;
+// 		&::after{
+// 			content: "gallery";
+// 			white-space: nowrap;
+// 			left: 20px;
+// 			position: absolute;
+// 			font-family: avenir next;
+// 			letter-spacing: 0.35em;
+// 			font-weight: bold;
+// 			font-size: 0.8em;
+// 		}
+// 	}
 	
-	.dot4{
-		top: 240px;
-		&::after{
-			content: "get smart";
-			white-space: nowrap;
-			left: 20px;
-			position: absolute;
-			font-family: avenir next;
-			letter-spacing: 0.35em;
-			font-weight: bold;
-			font-size: 0.8em;
-		}
-	}
-}
+// 	.dot4{
+// 		top: 240px;
+// 		&::after{
+// 			content: "get smart";
+// 			white-space: nowrap;
+// 			left: 20px;
+// 			position: absolute;
+// 			font-family: avenir next;
+// 			letter-spacing: 0.35em;
+// 			font-weight: bold;
+// 			font-size: 0.8em;
+// 		}
+// 	}
+// }
 
 
 
