@@ -2,15 +2,6 @@
 
 console.log('Hello World from app.js! \nhey');
 
-//vertical line under logo
-
-// document.querySelector('.logo img').addEventListener('click', function(){
-//     //show the vertical line menu
-//     document.querySelector('.vertical-line').classList.toggle('show');
-//     // document.querySelector('.dot1').classList.toggle('show');
-// })
-
-
 document.querySelector('.mobile-menu img').addEventListener('click', function () {
     //show the mobile menu
     document.querySelector('.nav').classList.toggle('show');
@@ -85,6 +76,16 @@ for (var i = 0; i < dots.length; i++) {
 }
 
 // // ------------------------------------------------------------------------------------------
+
+
+//vertical line under logo
+
+// document.querySelector('.logo img').addEventListener('click', function(){
+//     //show the vertical line menu
+//     document.querySelector('.vertical-line').classList.toggle('show');
+//     // document.querySelector('.dot1').classList.toggle('show');
+// })
+
 
 // // logo active dots 
 
