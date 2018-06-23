@@ -103,7 +103,7 @@ p {
 	font-family: avenir next;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
-	transition: 1s ease;
+	transition: .5s ease;
 }
 
 .nav a:hover {
@@ -1154,6 +1154,25 @@ h2 {
 
 .gallery .gallerySlide img:first-child {
 	display: block;
+	overflow: hidden;
+}
+
+.gallery .gallerySlide img.activeImage {
+	display: block;
+}
+
+.gallery .arrows {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 30px;
+	font-size: 1.7em;
+	color: #fbbe28;
+}
+
+@media screen and (min-width: 768px) {
+	.gallery .arrows {
+		display: none;
+	}
 }
 
 .gallery .slideCircles {
@@ -1162,6 +1181,12 @@ h2 {
 	flex-direction: row;
 	margin: 4% auto;
 	position: relative;
+}
+
+@media screen and (max-width: 767px) {
+	.gallery .slideCircles {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -1175,7 +1200,7 @@ h2 {
 	height: 15px;
 	background-color: #fbbe28;
 	border-radius: 90%;
-	margin: 0 2%;
+	margin: 0 1.4%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1183,6 +1208,12 @@ h2 {
 		width: 12px;
 		height: 12px;
 		margin: 0 3%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.gallery .slideCircles div {
+		margin: 0 1%;
 	}
 }
 
@@ -1234,7 +1265,7 @@ h2 {
 }
 
 .callToAction .buttons a {
-	transition: 2s ease;
+	transition: .4s ease;
 	min-width: 183px;
 	text-align: center;
 	text-transform: uppercase;

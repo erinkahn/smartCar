@@ -5,7 +5,7 @@ console.log('Hello World from app.js! \nhey');
 document.querySelector('.mobile-menu img').addEventListener('click', function () {
     //show the mobile menu
     document.querySelector('.nav').classList.toggle('show');
-    TweenMax.staggerTo('.nav ul li', 1.5, { opacity: 1 }, 0.5);
+    TweenMax.staggerTo('.nav ul li', .3, { opacity: 1 }, 0.5);
 });
 
 // ------------------------------------------------------------------------------------------
@@ -75,47 +75,53 @@ for (var i = 0; i < dots.length; i++) {
     _loop(i);
 }
 
-// // ------------------------------------------------------------------------------------------
+// arrows for gallery mobile 
 
+var leftArrow = document.querySelector('.fa-arrow-left');
 
-//vertical line under logo
+var rightArrow = document.querySelector('.fa-arrow-right');
 
-// document.querySelector('.logo img').addEventListener('click', function(){
-//     //show the vertical line menu
-//     document.querySelector('.vertical-line').classList.toggle('show');
-//     // document.querySelector('.dot1').classList.toggle('show');
-// })
+var currentImage = 0;
 
+leftArrow.addEventListener('click', function () {
+    console.log('left arrow clicked');
+    currentImage--;
+    if (currentImage < 0) {
+        currentImage = 9;
+    }
+    loopThroughImages();
+});
 
-// // logo active dots 
+rightArrow.addEventListener('click', function () {
+    console.log('right arrow clicked');
+    currentImage++;
+    if (currentImage > 9) {
+        currentImage = 0;
+    }
+    loopThroughImages();
+});
 
+var loopThroughImages = function loopThroughImages() {
+    // loop through images ex and int
 
-// //loop through .vertical-line
-// // when you click a dot add the class of active
-// // remove the class of active
+    for (var m = 0; m < exteriorImages.length; m++) {
+        console.log('exteriorImages[m]');
 
-// let allVerticalDots = document.querySelectorAll('.dot');
+        if (currentImage == m) {
+            exteriorImages[m].classList.add('activeImage');
+        } else {
+            exteriorImages[m].classList.remove('activeImage');
+        }
+    }
 
-// for (let i = 0; i < allVerticalDots.length; i++){
-//     console.log('allVerticalDots[i]');
+    for (var n = 0; n < interiorImages.length; n++) {
+        console.log('interiorImages[n]');
 
-//     allVerticalDots[i].addEventListener('click', function() {
-
-//         if (allVerticalDots[i].classList.contains('active')){
-//             allVerticalDots[i].classList.remove('active');
-//         } else {
-//             allVerticalDots[i].classList.add('active');
-//         }
-
-//     })
-// }
-
-
-// ------------------------------------------------------------------------------------------
-
-// scroll effects
-// window.addEventListener("scroll", function() {
-//     console.log("scrolling!", window.scrollY)
-// })
-// this shit is hard use waypoints instead
+        if (currentImage == n) {
+            interiorImages[n].classList.add('activeImage');
+        } else {
+            interiorImages[n].classList.remove('activeImage');
+        }
+    }
+};
 //# sourceMappingURL=main.js.map
