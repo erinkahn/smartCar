@@ -85,6 +85,7 @@ p {
 
 .mobile-menu:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -496,11 +497,6 @@ p {
 	.logo img {
 		max-width: 10%;
 	}
-}
-
-.logo img:hover {
-	transform: rotate(-90deg);
-	transform-origin: center;
 }
 
 h2 {
