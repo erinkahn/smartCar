@@ -513,7 +513,7 @@ h2 {
 }
 
 .middle-top {
-	margin: 40% auto;
+	margin: 30% auto;
 	overflow: hidden;
 	position: relative;
 }
@@ -521,7 +521,15 @@ h2 {
 @media screen and (min-width: 768px) {
 	.middle-top {
 		width: 82.470817%;
-		margin: 20% auto;
+		margin-top: 20%;
+		margin-bottom: 20%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.middle-top {
+		margin-bottom: 14%;
+		margin-top: 14%;
 	}
 }
 
@@ -638,13 +646,33 @@ h2 {
 .middle-middle {
 	position: relative;
 	overflow: hidden;
-	margin: 40% auto;
+	margin: 30% auto;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-middle {
 		width: 75.470817%;
 		margin: 20% auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.middle-middle {
+		margin-top: 13%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-middle {
+		margin-top: -3%;
+		margin-bottom: -4%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.middle-middle {
+		margin-top: -4%;
+		margin-bottom: -6%;
 	}
 }
 
@@ -664,7 +692,7 @@ h2 {
 	background-image: url("../img/blueCar.png");
 	background-repeat: no-repeat;
 	height: 0;
-	padding-bottom: 53%;
+	padding-bottom: 50%;
 	background-size: 100% auto;
 }
 
@@ -754,14 +782,20 @@ h2 {
 .middle-bottom {
 	position: relative;
 	overflow: hidden;
-	margin: 40% auto;
+	margin: 30% auto;
 }
 
 @media screen and (min-width: 768px) {
 	.middle-bottom {
 		width: 83.40625%;
-		margin-top: 25%;
+		margin-top: 20%;
 		margin-bottom: 20%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.middle-bottom {
+		margin-bottom: 15%;
 	}
 }
 
@@ -878,7 +912,7 @@ h2 {
 
 @media screen and (max-width: 714px) {
 	.modelsTitle {
-		margin-bottom: 23%;
+		margin-bottom: 17%;
 	}
 }
 
@@ -1062,7 +1096,7 @@ h2 {
 }
 
 .gallery {
-	margin-bottom: 50%;
+	margin-bottom: 35%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1071,14 +1105,26 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1224px) {
+	.gallery {
+		margin: 10% auto;
+	}
+}
+
 .gallery .galleryTitle {
-	margin: 50% 0 20% 0;
+	margin: 40% 0 10% 0;
 	text-align: center;
 }
 
 @media screen and (min-width: 768px) {
 	.gallery .galleryTitle {
 		margin: 25% 0 0 0;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.gallery .galleryTitle {
+		margin: 15% 0 0 0;
 	}
 }
 
@@ -1228,6 +1274,12 @@ h2 {
 @media screen and (min-width: 768px) {
 	.callToAction {
 		margin-bottom: 20%;
+	}
+}
+
+@media screen and (min-width: 1224px) {
+	.callToAction {
+		margin-top: 16%;
 	}
 }
 
